@@ -18,3 +18,5 @@ Start a local Server
 
 
 Now start coding and see changes in http://localhost:8000
+You will need to execute `./apply.sh` to make changes to `index.html` and `aufruf.html` visible.
+The apply script also generates the `html.zip`.
