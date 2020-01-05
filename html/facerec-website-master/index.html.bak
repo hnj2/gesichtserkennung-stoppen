@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keine Gesichtserkennung zur Massenüberwachung</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+    <nav class="navbar">
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#testimonials">
+            Testimonials
+          </a>
+          <a class="navbar-item" href="#unterstützende">
+            Unterstützende
+          </a>
+          <a class="navbar-item" href="#über-das-projekt">
+            Über das Projekt
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </div>
+</div>
+    <section class="hero is-medium is-primary">
+        <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h1 class="title is-2 is-spaced is-uppercase">
+                Keine Gesichts&shy;erkennung<br/> zur Massen&shy;überwachung
+              </h1>
+            </div>
+
+          </div>
+      </div>
+    </section>
+    <section class="section hero is-medium is-info">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <p>
+              Wenige Überwachungsmaßnahmen bedrohen Freiheitsrechte und Demokratie so sehr wie automatische Gesichtserkennung: <br> Sie macht Fehler, sie diskriminiert Frauen und People of Colour und verhindert die anonyme Teilnahme an Demonstrationen.
+		<br><br>
+Aber es zeigt sich internationaler Protest: In mehreren Städten in den USA wurde Gesichtserkennung bereits verboten. <br><br>
+Auch wir wollen zeigen: <b>Gesichtserkennung ist es nicht wert! Der Schaden, den sie an Freiheitsrechten und Demokratie anrichtet ist immens – der Zugewinn an öffentlicher Sicherheit fraglich.</b>
+	      </p>
+		<h2 class="title is-2 has-text-centered">Unsere Forderung</h2>
+              <div class="columns is-mobile">
+                <div class="column">
+                  <h3 class="title is-2 has-text-right">1.</h3>
+                </div>
+                <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-three-quarters">
+                  Ein Verbot automatischer Gesichtserkennung in der Öffentlichkeit durch die Polizei oder anderer staatlicher Akteure.
+                </div>
+              </div>
+              <div class="columns is-mobile">
+                <div class="column">
+                  <h3 class="title is-2 has-text-right">2.</h3>
+                </div>
+                <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-three-quarters">
+                  Wirksames Vorgehen gegen Terroranschläge durch soziale Präventions- und Aussteigerprogramme statt ungezielter Massenüberwachung.
+                </div>
+              </div>
+              <center><a class="button is-large is-primary is-hcentered" href="/aufruf.html">
+                Jetzt den Aufruf lesen und unterstützen
+              </a>
+		</center>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <div class="content">
+              <h2 class="title is-2 has-text-centered">Warum Gesichts&shy;erkennung verbieten?</h2>
+              <div class="columns">
+                <div class="column">
+                  <h3>Falscherkennung</h3>
+                </div>
+                <div class="column is-two-thirds">
+                  Die Systeme funktionieren mangelhaft. Beim Test am Bahnhof Berlin-Südkreuz wurde ca. jede 200. Person fälschlich als gesuchte Person erkannt. Für Betroffene führt das zu unangenehmen Kontrollen, für die Polizei zu einer Überlastung durch Fehlalarme.
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <h3>Einfache Umgehung</h3>
+                </div>
+                <div class="column is-two-thirds">
+                  Dreht eine gesuchte Person ihr Gesicht nur um 15 Grad von den Kameras weg, wird sie von den Systemen nicht mehr erkannt. Wer eine Straftat plant, kann sich einfach vor Erkennung schützen.
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <h3>Diskriminierung</h3>
+                </div>
+                <div class="column is-two-thirds">
+                  Gesichtserkennung diskriminiert Frauen, Kinder und People of Colour. Bei diesen Gruppen liegen die Falscherkennungsraten signifikant höher als bei weißen Männern. Die negativen Folgen treffen also besonders Gruppen, die ohnehin schon Benachteiligungen ausgesetzt sind.
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <h3>Gefahr für die Demokratie</h3>
+                </div>
+                <div class="column is-two-thirds">
+                  Selbst wenn Gesichtserkennung perfekt funktionieren würde: Sie wäre dann in der Lage, ganze Stadtgebiete zu überwachen und die Identität von Zehn- oder Hunderttausenden von Menschen gleichzeitig zu erfassen. Durch das ständige Gefühl, überwacht zu werden, leiden Freiheitsrechte, individuelle Entfaltung und politische Teilhabe.
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <h3>Missbrauchspotential</h3>
+                </div>
+                <div class="column is-two-thirds">
+                  Gesichtserkennung birgt enormes Missbrauchspotential für Unbefugte und etwaige zukünftige autoritäre Regierungen. Zivilgesellschaftliches Engagement gegen eine Regierung, die exakt weiß, wer wann wo ist, ist nur schwer denkbar.
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-medium is-primary">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop">
+              <h2 id="testimonials" class="title is-2 has-text-centered">Testimonials</h2>
+
+              <div class="columns">
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+              </div>
+
+              <h2 id="unterstützende" class="title is-2 has-text-centered">Unter&shy;stützende</h2>
+
+              <div class="columns">
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="img/logo-chaosknoten.jpg">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="img/digiges.jpg">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="img/logo_rund.png">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+              </div>
+
+              <h2 id="über-das-projekt" class="title is-2 has-text-centered">Über das Projekt</h2>
+
+              <div class="columns">
+                <div class="column">
+                  <p>
+                  Getragen wird das Projekt von den unterstützenden Organisationen, initiiert wurde es von <a href="https://digitale-freiheit.jetzt" target="_blank">Digitale Freiheit</a>.
+		              </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer has-text-centered">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </footer>
+  </body>
+</html>
