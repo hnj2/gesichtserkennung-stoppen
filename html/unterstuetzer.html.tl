@@ -1,0 +1,156 @@
+    <section class="section hero is-medium is-primary">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6-desktop is-offset-3-desktop">
+            <h2 id="unterstützende" class="title is-2 has-text-centered">Unter&shy;stützende</h2>
+
+            <div class="columns is-multiline">
+
+              <div class="column is-half-tablet is-one-third-desktop">
+                <div class="whitebox" >
+                  <a href="https://ccc.de" target="_blank">
+                    <img src="img/logo-chaosknoten.jpg">
+              	  <p><b>Chaos Computer Club e.V.</b></p>
+                  </a>
+                </div>
+              </div>
+ 
+              <div class="column is-half-tablet is-one-third-desktop">
+                <div class="whitebox" >
+                  <a href="https://digitalegesellschaft.de/" target="_blank">
+                    <img src="img/digiges.jpg">
+              	  <p><b>Digitale Gesellschaft e.V.</b></p>
+                  </a>
+                </div>
+              </div>
+ 
+              <div class="column is-half-tablet is-one-third-desktop">
+                <div class="whitebox" >
+                  <a href="https://fiff.de/" target="_blank">
+                    <img src="img/fiff.jpg">
+              	  <p><b>FIfF e.V.</b></p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column is-half-tablet is-one-third-desktop">
+                <div class="whitebox">
+                  <a href="https://digitale-freiheit.jetzt/" target="_blank">
+                    <img src="img/logo_rund.png">
+              	  <p><b>Digitale Freiheit</b></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <h2 id="testimonials" class="title is-2 has-text-centered" style="margin-top:2em">Testimonials</h2>
+            <div id="testimonials-content" class="columns is-multiline">
+
+              <div class="column is-half">
+                <div class="whitebox">
+                  <video controls preload="none" poster="video_poster/ulf.jpg" width="250" height="157" >
+                    <source src="videos/ulf.mp4" type="video/mp4">
+                  </video>
+                  <a href="https://freiheitsrechte.org/" target="_blank">
+                    <p>
+                      <b>Ulf Buermeyer</b>
+                      <br />
+                      Vorsitzender Gesellschaft f. Freiheitsrechte
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="whitebox">
+                  <video controls preload="none" poster="video_poster/katta.jpg" width="250" height="157" >
+                    <source src="videos/katta.mp4" type="video/mp4">
+                  </video>
+                  <a href="https://kattascha.de" target="_blank">
+                    <p>
+                      <b>Katharina Nocun</b>
+                      <br />
+                      Netzaktivistin & Buchautorin
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="whitebox">
+                  <video controls preload="none" poster="video_poster/markus.jpg" width="250" height="157" >
+                    <source src="videos/markus.mp4" type="video/mp4">
+                  </video>
+                  <a href="https://twitter.com/netzpolitik" target="_blank">
+                    <p>
+                      <b>Markus Beckedahl</b>
+                      <br />
+                      Gründer re:publica & netzpolitik.org
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="whitebox">
+                  <video controls preload="none" poster="video_poster/anke.jpg" width="250" height="157" >
+                    <source src="videos/anke.mp4" type="video/mp4">
+                  </video>
+                  <a href="https://twitter.com/anked" target="_blank">
+                    <p>
+                      <b>Anke Domscheit-Berg</b>
+                      <br />
+                      Netzpolitische Sprecherin Linksfraktion
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column is-half">
+                <div class="whitebox">
+                  <video controls preload="none" poster="video_poster/thomas.jpg" width="250" height="157" >
+                    <source src="videos/thomas.mp4" type="video/mp4">
+                  </video>
+                  <a href="https://socialhack.eu/" target="_blank">
+                    <p>
+                      <b>Thomas Lohninger</b>
+                      <br />
+                      Geschäftsführer epicenter.works
+                    </p>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="column is-half">
+                <div class="whitebox">
+                  <video controls preload="none" poster="video_poster/rainer.jpg" width="250" height="157" >
+                    <source src="videos/rainer.mp4" type="video/mp4">
+                  </video>
+                  <a href="https://www.weizenbaum-institut.de/portrait/p/rainer-rehak/" target="_blank">
+                    <p>
+                      <b>Rainer Rehak</b>
+                      <br />
+                      Wissenschaftl. Mitarbeiter Weizenbaum Institut
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <h2 id="über-das-projekt" class="title is-2 has-text-centered" style="margin-top:2em">Über das Projekt</h2>
+
+            <div class="columns is-size-5">
+              <div class="column">
+                <p>
+                  Getragen wird das Projekt von den unterstützenden Organisationen, initiiert wurde es von <a href="https://digitale-freiheit.jetzt" target="_blank">Digitale Freiheit</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>

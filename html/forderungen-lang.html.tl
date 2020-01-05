@@ -1,0 +1,120 @@
+    <section class="section">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <div class="columns">
+            <div class="column">
+              Obwohl seit Jahren die Kriminalitätsrate und die Zahl der Todesopfer durch Terroranschläge sinkt, fordern Politiker*innen beständig den Ausbau von Massenüberwachung. Hierdurch soll einem „Gefühl“ der Unsicherheit der Menschen abgeholfen
+              werden.
+
+              Aktuell im Trend: Videoüberwachung mit Gesichtserkennung. Getestet wurden die Systeme bereits am Berliner Bahnhof Südkreuz.
+            </div>
+          </div>
+          <div class="content">
+            <h2 class="title is-2 has-text-primary has-text-centered">Warum Gesichts&shy;erkennung verbieten?</h2>
+            <div class="columns">
+              <div class="column">
+                <h3>Falsch&shy;erkennung</h3>
+              </div>
+              <div class="column is-two-thirds">
+                Die Systeme funktionieren mangelhaft. In dem Test am Südkreuz wurde ca. jeder 200. Mensch fälschlich als gesuchte Person erkannt.<a title="Analyse des Chaos Computer Clubs"
+                  href="https://www.ccc.de/de/updates/2018/debakel-am-suedkreuz" target="_blank">[1]</a> In der Praxis würde das an einem Bahnhof wie dem Berliner Südkreuz dazu führen, dass täglich 600 Menschen fälschlich als gefährliche Person
+                erkannt werden. Diese Menschen wären unangenehmen Kontrollen ausgesetzt. Die Polizei wäre von Fehlalarmen überlastet.
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <h3>Einfache Umgehung</h3>
+              </div>
+              <div class="column is-two-thirds">
+                Dreht eine gesuchte Person ihr Gesicht nur um 15 Grad von den Kameras weg, wird sie von den Systemen nicht mehr erkannt.<a title="Abschlussbericht der Bundespolizei, Seite 31"
+                  href="https://www.bundespolizei.de/Web/DE/04Aktuelles/01Meldungen/2018/10/181011_abschlussbericht_gesichtserkennung_down.pdf;jsessionid=B00C5E4B9341D9F8733EF8508A6D9C46.2_cid324?__blob=publicationFile&v=1" target="_blank">[2]</a>
+                Die Erkennung lässt sich auch durch das teilweise Bedecken des Gesichts, z.B. mit einem Schal oder einer Mütze, vereiteln. Wer eine Straftat plant, kann sich einfach vor Erkennung schützen.
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <h3>Diskriminierung</h3>
+              </div>
+              <div class="column is-two-thirds">
+                Gesichtserkennung diskriminiert Frauen, Kinder und People of Colour. Bei diesen Gruppen liegen die Falscherkennungsraten signifikant höher als bei weißen mitteleuropäischen Männern.<a
+                  title="Studie “Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification”" href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf" target="_blank">[3]</a> Das liegt daran, dass die
+                hiesigen Systeme großteils mit Bildern von weißen, männlichen Gesichtern trainiert werden. <b>Die negativen Folgen treffen also besonders Gruppen, die ohnehin schon Benachteiligungen ausgesetzt sind.</b>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <h3>Gefahr für die Demokratie</h3>
+              </div>
+              <div class="column is-two-thirds">
+                <p>
+                  Selbst wenn Gesichtserkennung perfekt funktionieren würde: Sie wäre dann in der Lage, <b>ganze Stadtgebiete zu überwachen und die Identität von Zehn- oder Hunderttausenden von Menschen gleichzeitig zu erfassen</b>. Technisch möglich
+                  wäre das staatliche Erstellen von Bewegungsprofilen.
+                </p>
+                <p>
+                  Darunter leiden Freiheitsrechte, individuelle Entfaltung und politische Teilhabe. Wer sich im öffentlichen Raum ständig von einer intelligenten Kamera abgescannt und analysiert fühlt, verspürt einen Überwachungsdruck.
+                  Selbsteinschränkung und aufgezwungene „Konformität“ ist die Folge.<a title="Studien journalistisch aufbereitet von „der Freitag“ und „Deutschlandfunk“"
+                    href="https://www.freitag.de/autoren/netzpiloten/studie-beweist-selbstzensur-durch-ueberwachung; https://www.deutschlandfunk.de/staatliche-ueberwachung-befallen-vom-ueberwachungsvirus.1184.de.html?dram:article_id=307639"
+                    target="_blank">[4]</a> In einer gesunden, pluralistischen Demokratie ist es aber wichtig, dass sich Menschen bei ihrer Meinungsbildung, individuellen Entfaltung und politischen Partizipation nicht beobachtet fühlen.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <h3>Missbrauchs&shy;potential</h3>
+              </div>
+              <div class="column is-two-thirds">
+                Gesichtserkennung birgt enormes Missbrauchspotential – sowohl für einzelne unberechtigt Handelnde als auch für etwaige zukünftige autoritäre Regierungen. Zivilgesellschaftliches Engagement gegen eine Regierung, die exakt weiß, wer
+                wann wo ist, ist nur schwer denkbar. Es liegt in der <b>historischen Verantwortung Deutschlands</b>, keine Infrastruktur aufzubauen, die es ermöglicht, die gesamte Gesellschaft zu kontrollieren.
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                Das Bewusstsein für die Risiken wächst: Zuerst in San Francisco<a href="https://www.fr.de/wirtschaft/gastwirtschaft/mein-gesicht-meine-freiheit-12919089.html" target="_blank">[5]</a>, später in weiteren Städten Kaliforniens sowie
+                Massachusetts, USA, wurde die polizeiliche Verwendung von Gesichtserkennungssystemen verboten.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-medium is-info">
+    <div class="container">
+      <div class="columns is-mobile">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <div class="content">
+            <h2 class="title is-2 has-text-centered">Unsere Forderungen</h2>
+            <div class="columns is-mobile">
+              <div class="column">
+                <h3 class="title is-2 has-text-right">1.</h3>
+              </div>
+              <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-three-quarters">
+                Ein Verbot automatischer Gesichtserkennung in der Öffentlichkeit durch die Polizei oder andere staatliche Akteure.
+              </div>
+            </div>
+            <div class="columns is-mobile">
+              <div class="column">
+                <h3 class="title is-2 has-text-right">2.</h3>
+              </div>
+              <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-three-quarters">
+                Wirksames Vorgehen gegen Terroranschläge durch soziale Präventions- und Aussteigerprogramme statt ungezielter Massenüberwachung.
+              </div>
+            </div>
+            <div class="columns is-mobile">
+              <div class="column is-offset-2-desktop" style="background-color:#fe0000">
+		<b>Sie sind Teil einer Organisation, die den Aufruf unterstützenswert findet? Dann schreiben Sie uns eine kurze Mail an die folgende Adresse:</b>
+		<a class="" href="mailto:mail@digitale-freiheit.jetzt?subject=Aufruf unterstützen - Keine Gesichtserkennung zur Massüberwachung">
+               <br> mail@digitale-freiheit.jetzt 
+              </a>
+              </div>
+            </div>
+
+
+
+            <center></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
