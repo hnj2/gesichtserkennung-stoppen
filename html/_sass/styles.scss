@@ -53,3 +53,23 @@ h2 {
 .is-twice-as-big {
 
 }
+
+.whitebox {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  height: 100%;
+  text-align: center;
+}
+
+.whitebox img {
+  max-height: 150px;
+}
+
+#testimonials-content .whitebox p b {
+  font-size: 1.3em;
+}
+
+.whitebox a p {
+  color: black;
+}
