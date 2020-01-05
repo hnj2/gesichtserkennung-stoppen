@@ -7103,13 +7103,30 @@ label.panel-block {
 
 .footer {
   background-color: #fe0000;
-  padding: 1rem 1.5rem 1rem; }
+  padding: 1rem 1.5rem 1rem;
+  color: true; }
 
 h2 {
   font-family: "InriaBold"; }
 
-.container, .button {
-  white-space: normal; }
-
 .has-shadow {
   text-shadow: 2px 2px 10px #000; }
+
+.whitebox {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  height: 100%;
+  text-align: center; }
+
+.whitebox img {
+  max-height: 150px; }
+
+#testimonials-content .whitebox p b {
+  font-size: 1.3em; }
+
+#testimonials-content .whitebox p {
+  font-size: 1.1em; }
+
+.whitebox a p {
+  color: black; }
