@@ -18,4 +18,4 @@ cat testimonials.html;
 cat footer.html
 ) >aufruf.html
 
-zip ../html.zip -xr index.html aufruf.html datenschutz.html impressum.html css/styles.css
+zip ../html.zip -xr index.html aufruf.html datenschutz.html impressum.html css/styles.css img/* img/gesichter/*
