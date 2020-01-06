@@ -1,5 +1,6 @@
 (
 cat header.html;
+cat title-large.html;
 cat forderungen-kurz.html;
 cat unterstuetzer.html;
 cat footer.html
@@ -7,6 +8,7 @@ cat footer.html
 
 (
 cat header.html;
+cat title-small.html;
 cat forderungen-lang.html;
 cat unterstuetzer.html;
 cat footer.html

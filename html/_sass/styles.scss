@@ -22,6 +22,11 @@
   src: url("/fonts/InriaSans-Bold.ttf");
 }
 
+@font-face {
+  font-family: "CABNDWeb-Bold";
+  src: url("/fonts/CABNDWeb-Bold.ttf");
+}
+
 // 3. Set the derived variables
 // Use the new pink as the primary color
 //$primary: $pink;
@@ -43,7 +48,17 @@ $footer-padding: 1rem 1.5rem 1rem;
 @import "../node_modules/bulma/bulma";
 
 h2 {
-  font-family: "InriaBold";
+  font-family: "CABNDWeb-Bold";
+}
+
+.navbar-brand a {
+  font-family: "CABNDWeb-Bold";
+  font-size: 120%;
+}
+
+a.anchor {
+  padding-top: 120px;
+  margin-top: -120px;
 }
 
 .has-shadow {
@@ -52,6 +67,59 @@ h2 {
 
 .is-twice-as-big {
 
+}
+
+.navbar .container {
+  padding: 0 12px;
+}
+
+#large-title .hero-body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+#large-title img {
+  opacity: 0.7;
+  border: 1px solid white;
+}
+
+#large-title .noface {
+  width: 100%;
+  padding: 0;
+  opacity: 0.7;
+  border: 1px solid white;
+}
+
+#large-title .noface:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#large-title h1 {
+  text-align: center;
+  font-size: 450%;
+  font-family: CABNDWeb-Bold;
+}
+
+#large-title h1 span {
+  padding: 10px 20px 0;
+  background-color: #875ED8;
+}
+
+#small-title .hero-body {
+  padding-bottom: 100px;
+}
+
+#small-title h1 {
+  text-align: center;
+  font-size: 450%;
+  font-family: CABNDWeb-Bold;
+}
+
+#small-title h1 span {
+  padding: 10px 20px 0;
+  background-color: #875ED8;
 }
 
 .whitebox {

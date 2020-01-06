@@ -10,51 +10,155 @@
 </head>
 
 <body class="has-background-dark">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-tab" href="/">
+            Gesichtserkennung-Stoppen.de
+            <!--
+            <img src="img/gesichter/face1.jpg" width="50px" height="50px">
+            --!>
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+
+            <div class="navbar-start">
+              <a class="navbar-item is-tab" href="/#forderungen">
+                Forderungen
+              </a>
+              <a class="navbar-item is-tab" href="aufruf.html#aufruf">
+                Aufruf
+              </a>
+              <a class="navbar-item is-tab" href="#unterstuetzende">
+                Unterstützende
+              </a>
+              <a class="navbar-item is-tab" href="#testimonials">
+                Testimonials
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <a class="navbar-item is-tab" href="/#ueber-das-projekt">
+                Über das Projekt
+              </a>
+            </div>
+
+        </div>
+    </div>
+  </nav>     
+
   <div class="container has-background-white">
-    <div class="columns">
-      <div class="column is-10-desktop is-offset-1-desktop">
+    <section id="large-title" class="hero is-medium is-primary">
+      <div class="hero-body">
 
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
+        <div class="columns is-hidden-touch">
+          <div class="column is-10 is-offset-1">
+            <div class="columns faces">
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-
-          <div id="navbarBasicExample" class="navbar-menu">
-
-              <div class="navbar-end">
-                <a class="navbar-item is-tab" href="#unterstützende">
-                  Unterstützende
-                </a>
-                <a class="navbar-item is-tab" href="#über-das-projekt">
-                  Über das Projekt
-                </a>
+              <div class="column is-one-fifth">
+                <img src="img/gesichter/face5468.jpg">
               </div>
 
-          </div>
-        </nav>     
-        
-      </div>
-    </div>
-  </div>
+              <div class="column is-one-fifth">
+                <img src="img/gesichter/face932.jpg">
+              </div>
 
-  <div class="container has-background-white">
-    <section class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <h1 class="title is-2 is-spaced is-uppercase">
-              Keine Gesichts&shy;erkennung<br /> zur Massen&shy;überwachung
-            </h1>
+              <div class="column is-one-fifth">
+                <div class="noface"></div>
+              </div>
+
+              <div class="column is-one-fifth">
+                <img src="img/gesichter/face3.jpg">
+              </div>
+
+              <div class="column is-one-fifth">
+                <img src="img/gesichter/face5.jpg">
+              </div>
+
+            </div>
           </div>
         </div>
+
+        <div class="columns">
+          <div class="column is-10-desktop is-offset-1-desktop">
+            <a href="/">
+              <h1 class="title is-1 is-spaced is-uppercase"><span>
+                Keine Gesichts&shy;erkennung
+              </span><br /><span>
+                zur Massen&shy;überwachung
+              </span></h1>
+            </a>
+          </div>
+        </div>
+
+        <div class="columns is-hidden-touch">
+          <div class="column is-10 is-offset-1">
+            <div class="columns">
+
+              <div class="column is-one-fifth" height="200px">
+                <div class="noface"></div>
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <img src="img/gesichter/face6.jpg">
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <div class="noface"></div>
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <div class="noface"></div>
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <img src="img/gesichter/face4.jpg">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="columns is-hidden-touch">
+          <div class="column is-10 is-offset-1">
+            <div class="columns">
+
+              <div class="column is-one-fifth" height="200px">
+                <img src="img/gesichter/face1.jpg">
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <div class="noface"></div>
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <img src="img/gesichter/face9.jpg">
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <div class="noface"></div>
+              </div>
+
+              <div class="column is-one-fifth" height="200px">
+                <img src="img/gesichter/face098.jpg">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
     <section class="section hero is-medium is-info is-size-5">
+      <a class="anchor" name="forderungen"></a>
       <div class="columns">
         <div class="column is-8-desktop is-offset-2-desktop">
             <p>
@@ -171,7 +275,8 @@
       <div class="container">
         <div class="columns">
           <div class="column is-6-desktop is-offset-3-desktop">
-            <h2 id="unterstützende" class="title is-2 has-text-centered">Unter&shy;stützende</h2>
+            <a class="anchor" name="unterstuetzende"></a>
+            <h2 class="title is-2 has-text-centered">Unter&shy;stützende</h2>
 
             <div class="columns is-multiline">
 
@@ -210,10 +315,22 @@
                   </a>
                 </div>
               </div>
+ 
+              <div class="column is-half-tablet is-one-third-desktop">
+                <div class="whitebox" >
+                  <a href="https://digitalcourage.de/" target="_blank">
+                    <img src="img/logo-dc.png">
+              	  <p><b>Digitalcourage e.V.</b></p>
+                  </a>
+                </div>
+              </div>
             </div>
 
 
-            <h2 id="testimonials" class="title is-2 has-text-centered" style="margin-top:2em">Testimonials</h2>
+            <h2 class="title is-2 has-text-centered" style="margin-top:2em">
+              <a class="anchor" name="testimonials"></a>
+            Testimonials</h2>
+
             <div id="testimonials-content" class="columns is-multiline">
 
               <div class="column is-half">
@@ -310,7 +427,10 @@
 
 
 
-            <h2 id="über-das-projekt" class="title is-2 has-text-centered" style="margin-top:2em">Über das Projekt</h2>
+            <h2 class="title is-2 has-text-centered" style="margin-top:2em">
+              <a name="ueber-das-projekt"></a>
+              Über das Projekt
+            </h2>
 
             <div class="columns is-size-5">
               <div class="column">
