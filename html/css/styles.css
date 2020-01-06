@@ -7106,9 +7106,8 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fe0000;
-  padding: 1rem 1.5rem 1rem;
-  color: true; }
+  background-color: #fafafa;
+  padding: 3rem 1.5rem 6rem; }
 
 h2 {
   font-family: "CABNDWeb-Bold"; }
@@ -7175,7 +7174,7 @@ a.anchor {
   text-align: center; }
 
 .whitebox img {
-  max-height: 150px; }
+  max-height: 250px; }
 
 #testimonials-content .whitebox p b {
   font-size: 1.3em; }

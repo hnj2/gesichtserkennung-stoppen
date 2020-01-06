@@ -38,9 +38,9 @@ $info: $blue;
 
 $family-primary: "InriaBold";
 
-$footer-background-color: $primary;
-$footer-color: true;
-$footer-padding: 1rem 1.5rem 1rem;
+//$footer-background-color: $primary;
+//$footer-color: true;
+//$footer-padding: 1rem 1.5rem 1rem;
 
 
 // 4. Import the rest of Bulma
@@ -131,7 +131,7 @@ a.anchor {
 }
 
 .whitebox img {
-  max-height: 150px;
+  max-height: 250px;
 }
 
 #testimonials-content .whitebox p b {
@@ -144,4 +144,7 @@ a.anchor {
 
 .whitebox a p {
   color: black;
+}
+
+.footer {
 }
