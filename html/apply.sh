@@ -8,6 +8,16 @@ cat unterstuetzer.html;
 cat footer.html
 ) >index.html
 
+
+(
+cat header.html;
+cat title-small.html;
+cat pmraw.html;
+cat testimonials.html;
+cat unterstuetzer.html;
+cat footer.html
+) >pm.html
+
 (
 cat header.html;
 cat title-small.html;
