@@ -2,17 +2,23 @@ version: '2'
 
 services:
 
-    node:
-        image: node:lts-alpine
-        restart: always
+    sass-watcher:
+        image: sass-watcher
+        build: ./sass-watcher
         volumes:
-            - "./html:/app"
-        working_dir: /app
-        command: npm start
+            - "./html/css:/app/css"
+            - "./templates/styles.scss:/app/sass/styles.scss:ro"
 
-    python:
+    html-watcher:
+        image: watch-make
+        build: ./html-watcher
+        volumes:
+            - "./html:/app/html"
+            - "./Makefile:/app/Makefile:ro"
+            - "./templates:/app/templates:ro"
+
+    http-server:
         image: python:2-alpine
-        restart: always
         ports:
             - "127.0.0.1:8000:8000"
         volumes:
