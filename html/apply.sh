@@ -20,6 +20,14 @@ cat footer.html
 
 (
 cat header.html;
+cat actionraw.html;
+cat testimonials.html;
+cat unterstuetzer.html;
+cat footer.html
+) >action.html
+
+(
+cat header.html;
 cat title-small.html;
 cat forderungen-lang.html;
 cat unterstuetzer.html;
