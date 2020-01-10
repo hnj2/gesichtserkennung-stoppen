@@ -1075,7 +1075,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     display: none !important; } }
 
 @media screen and (min-width: 1024px) {
-  .is-hidden-desktop {
+  .is-hidden-desktop, .argumente .columns:before {
     display: none !important; } }
 
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
@@ -7184,3 +7184,11 @@ a.anchor {
 
 .whitebox a p {
   color: black; }
+
+.argumente .columns {
+  margin-top: 20px; }
+
+.argumente .columns:before {
+  content: "";
+  display: block;
+  height: 30px; }

@@ -146,5 +146,16 @@ a.anchor {
   color: black;
 }
 
+.argumente .columns {
+  margin-top: 20px;
+}
+
+.argumente .columns:before {
+  content: "";
+  display: block;
+  height: 30px;
+  @extend .is-hidden-desktop;
+}
+
 .footer {
 }
