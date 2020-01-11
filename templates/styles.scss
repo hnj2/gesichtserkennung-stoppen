@@ -38,17 +38,29 @@ $info: $blue;
 
 $family-primary: "InriaBold";
 
+$card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0, 0.04);
+
 //$footer-background-color: $primary;
 //$footer-color: true;
 //$footer-padding: 1rem 1.5rem 1rem;
-
 
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
 
-h2 {
-  font-family: "CABNDWeb-Bold";
+//.title {
+//  font-family: "CABNDWeb-Bold";
+//}
+
+section {
+  margin-bottom: 0 !important;
+  padding: 6rem 1.5rem;
+}
+
+@media screen and (min-width: $desktop) {
+  section {
+    padding: 6rem 15%;
+  }
 }
 
 .navbar-brand a {
@@ -56,7 +68,7 @@ h2 {
   font-size: 120%;
 }
 
-a.anchor {
+.anchor {
   padding-top: 120px;
   margin-top: -120px;
 }
@@ -73,38 +85,42 @@ a.anchor {
   padding: 0 12px;
 }
 
-#large-title .hero-body {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-#large-title img {
-  opacity: 0.7;
-  border: 1px solid white;
-}
-
-#large-title .noface {
-  width: 100%;
+#large-title {
   padding: 0;
-  opacity: 0.7;
-  border: 1px solid white;
-}
 
-#large-title .noface:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
-#large-title h1 {
-  text-align: center;
-  font-size: 450%;
-  font-family: CABNDWeb-Bold;
-}
-
-#large-title h1 span {
-  padding: .2em .3em 0;
-  background-color: #875ED8;
+  .hero-body {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  
+  img {
+    opacity: 0.7;
+    border: 1px solid white;
+  }
+  
+  .noface {
+    width: 100%;
+    padding: 0;
+    opacity: 0.7;
+    border: 1px solid white;
+  }
+  
+  .noface:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 450%;
+    font-family: CABNDWeb-Bold;
+  }
+  
+  h1 span {
+    padding: .2em .3em 0;
+    background-color: #875ED8;
+  }
 }
 
 #small-title .hero-body {
@@ -122,28 +138,28 @@ a.anchor {
   background-color: #875ED8;
 }
 
-.whitebox {
-  background-color: white;
-  color: black;
-  padding: 10px;
+.forderungen-section {
+  @extend .hero;
+  @extend .is-info;
+  @extend .content;
+  @extend .is-large;
+  margin-bottom: 0;
+
+
+    .button {
+      width: 100%;
+      height: 100px;
+      @extend .is-primary;
+    }
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+ 
+#testimonials-section .card {
   height: 100%;
-  text-align: center;
-}
-
-.whitebox img {
-  max-height: 250px;
-}
-
-#testimonials-content .whitebox p b {
-  font-size: 1.3em;
-}
-
-#testimonials-content .whitebox p {
-  font-size: 1.1em;
-}
-
-.whitebox a p {
-  color: black;
 }
 
 .argumente .columns {
