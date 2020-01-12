@@ -1,41 +1,58 @@
 import sqlite3
+from flask import g
+import uuid
 
-import click
-from flask import current_app, g
-from flask.cli import with_appcontext
-import os
-
+DATABASE = 'sqlite.db'
 
 def get_db():
-    if 'db' not in g:
-        g.db = sqlite3.connect(
-            current_app.config['DATABASE'],
-            detect_types=sqlite3.PARSE_DECLTYPES
-        )
-        g.db.row_factory = sqlite3.Row
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = sqlite3.connect(DATABASE)
+    return db
 
-    return g.db
+
+
+def add_mail(mailaddress):
+    c = get_db().cursor()
+    guid = str(uuid.uuid4())
+    print(guid)
+    succ=c.execute('INSERT INTO mails (mailad, guid, confirmed) VALUES (?,?,?)',(mailaddress,guid,0))
+    c.close()
+    return succ
+
+def get_guid_for_mail(mailaddress):
+    c = get_db().cursor()
+    succ = c.execute('SELECT guid FROM mails WHERE mailad=(?)', (mailaddress,))
+    if succ:
+        guid = c.fetchone()
+        print(guid)
+        return guid
+    else: 
+        return False
+
+def delete_mail(real_guid):
+    c = get_db()
+    succ = c.execute('DELETE FROM mails WHERE guid=?', real_guid)
+    return succ  
+
+def confirm_mail(real_guid):
+    c = get_db()
+    succ = c.execute('UPDATE mails set confirmed = 1 WHERE guid=?', real_guid)
+    return succ  
+
+def export_mails():
+    c = get_db().cursor()
+    succ = c.execute('SELECT mailad FROM mails ')
+    return c.fetchall()
+
+
+def close_connection(exception):
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close()
 
 def close_db(e=None):
     db = g.pop('db', None)
 
     if db is not None:
         db.close()
-
-def init_db():
-    db = get_db()
-
-    with current_app.open_resource('schema.sql') as f:
-        db.executescript(f.read().decode('utf8'))
-
-
-@click.command('init-db')
-@with_appcontext
-def init_db_command():
-    """Clear the existing data and create new tables."""
-    init_db()
-    click.echo('Initialized the database.')
-
-def init_app(app):
-    app.teardown_appcontext(close_db)
-    app.cli.add_command(init_db_command)
