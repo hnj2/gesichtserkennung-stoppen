@@ -277,16 +277,21 @@ video {
   }
 }
 
+#argumente {
+  .columns {
+    margin-top: 20px;
+    h1, h2, h3, h4, h5, h6 {
+      text-align: left !important;
+    }
 
-.argumente .columns {
-  margin-top: 20px;
-}
+  }
 
-.argumente .columns:before {
-  content: "";
-  display: block;
-  height: 30px;
-  @extend .is-hidden-desktop;
+  .columns:before {
+    content: "";
+    display: block;
+    height: 30px;
+    @extend .is-hidden-desktop;
+  }
 }
 
 .footer {

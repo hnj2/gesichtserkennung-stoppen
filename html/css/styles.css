@@ -1075,7 +1075,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     display: none !important; } }
 
 @media screen and (min-width: 1024px) {
-  .is-hidden-desktop, .argumente .columns:before {
+  .is-hidden-desktop, #argumente .columns:before {
     display: none !important; } }
 
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
@@ -8017,10 +8017,12 @@ video {
         #unterstuetzende-section .card .card-image a img {
           max-height: 200px; } }
 
-.argumente .columns {
+#argumente .columns {
   margin-top: 20px; }
+  #argumente .columns h1, #argumente .columns h2, #argumente .columns h3, #argumente .columns h4, #argumente .columns h5, #argumente .columns h6 {
+    text-align: left !important; }
 
-.argumente .columns:before {
+#argumente .columns:before {
   content: "";
   display: block;
   height: 30px; }
