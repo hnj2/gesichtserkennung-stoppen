@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="has-background-dark">
-  <nav class="navbar is-fixed-top is-hidden-touch" role="navigation" aria-label="main navigation">
+<body>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item is-tab" href="/">
-            Gesichtserkennung-Stoppen.de
+            Gesichtserkennung Stoppen
             <!--
             <img src="img/gesichter/face1.jpg" width="50px" height="50px">
             -->
           </a>
 
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -29,9 +29,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
 
-            <div class="navbar-start">
+            <div class="navbar-start" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
               <a class="navbar-item is-tab" href="/#forderungen">
                 Forderungen
+              </a>
+              <a class="navbar-item is-tab" href="action.html">
+                Was kann ich tun?
+              </a>
+              <a class="navbar-item is-tab" href="/#testimonials">
+                Testimonials
               </a>
               <a class="navbar-item is-tab" href="aufruf.html#aufruf">
                 Aufruf
@@ -39,16 +45,13 @@
               <a class="navbar-item is-tab" href="#unterstuetzende">
                 Unterstützende
               </a>
-              <a class="navbar-item is-tab" href="#testimonials">
-                Testimonials
-              </a>
-              <a class="navbar-item is-tab" href="pm.html">
+              <a class="navbar-item is-tab" href="presse.html">
                 Pressemitteilung
               </a>
             </div>
 
             <div class="navbar-end">
-              <a class="navbar-item is-tab" href="/#ueber-das-projekt">
+              <a class="navbar-item is-tab" href="#footer">
                 Über das Projekt
               </a>
             </div>
@@ -58,248 +61,252 @@
   </nav>     
 
   <div class="container has-background-white">
-    <section class="section hero is-medium is-info is-size-5">
-      <div class="columns">
-        <div class="column is-8-desktop is-offset-2-desktop">
-          <h2 class="title is-2 has-text-centered">Was kann ich tun?</h2>
-          <p>
-            Die gute Nachricht: Bisher ist das Gesetz nur ein Entwurf. Damit haben wir noch eine Chance, Gesichtserkennung zu verhindern!
-          </p>
-          </br>
-          <p>
-            Was Sie jetzt tun können: Fragen Sie den oder die Abgeordnete:n aus Ihrem Wahlkreis, wie er oder sie zu automatischer Gesichtserkennung steht. Fragen Sie außerdem, ob er oder sie dagegen stimmen wird, wenn die Gesichtserkennung im Bundestag beschlossen werden soll.         
-          </p>
-          </br>
-          <p> 
-            Dazu können Sie <b><a href="https://abgeordnetenwatch.de" style="color:white">abgeordnetenwatch.de</a></b> nutzen. Diese Website ist gemeinnützig und ermöglicht es Bürger:innen, Fragen an Abgeordnete zu stellen. Die Fragen und Antworten sind transparent für alle sichtbar. Damit geben Abgeordnete eine Zusage ab, die sie später kaum mehr zurücknehmen wollen. Am besten beschränken Sie sich auf einige wenige Abgeordnete.
-    
-          </p>
-          </br>
-          <p>
-            Alternativ können Sie Bundestagsabgeordnete auch auf Twitter, anderen Social Media Kanälen oder per E-Mail kontaktieren!
-          </p>
-          </br>
-          </br>
-        </div>
+    <section id="was-kann-ich-tun">
+      <div class="content">
+        <h2 class="title is-2 has-text-centered">Was kann ich tun?</h2>
+        <p>
+          Fragen Sie Ihre:n Abgeordnete:n, wie er oder sie zu automatischer Gesichtserkennung steht. Fragen Sie außerdem, ob er oder sie dagegen stimmen wird, wenn die Gesichtserkennung im Bundestag beschlossen werden soll.
+        </p>
+        </br>
+        <p> 
+          Dazu können Sie <b><a href="https://abgeordnetenwatch.de" style="color:white">abgeordnetenwatch.de</a></b> nutzen.
+          Die Fragen und Antworten sind transparent für alle sichtbar. Damit geben Abgeordnete eine Zusage ab, die sie später kaum mehr zurücknehmen wollen. 
+        </p>
+        </br>
+        <p>
+          Alternativ können Sie Bundestagsabgeordnete auch auf Twitter, anderen Social Media Kanälen oder per E-Mail kontaktieren!
+        </p>
       </div>
+
       <div class="columns">
-        <div class="column is-10-desktop is-offset-1-desktop">
-          <div class="content">
-            <center><a class="button is-large is-size-6-mobile is-primary is-hcentered" href="https://www.abgeordnetenwatch.de/">
-                Jetzt auf abgeordnetenwatch.de Abgeordnete kontaktieren
+        <a href="https://www.abgeordnetenwatch.de/" class="column is-three-fifths is-offset-one-fifth">
+          <p class="button title is-size-3">
+            Jetzt auf abgeordnetenwatch.de Abgeordnete kontaktieren
+          </p>
+        </a>
+      </div>
+
+    </section>
+    <section id="testimonials-section">
+      <a class="anchor" name="testimonials"></a>
+      <h2>Testimonials</h2>
+
+      <div class="columns is-multiline">
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/katta.jpg">
+              <source src="videos/katta.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://kattascha.de" target="_blank">
+                <p class="title">Katharina Nocun</p>
+                <p class="subtitle">Netzaktivistin & Buchautorin</p>
               </a>
-            </center>
-          </div>
+            </div>
+          </article>
         </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/rainer.jpg">
+              <source src="videos/rainer.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://www.weizenbaum-institut.de/portrait/p/rainer-rehak/" target="_blank">
+                <p class="title">Rainer Rehak</p>
+                <p class="subtitle">Stellv. Vorsitzender des Forum InformatikerInnen für Frieden & gesellschaftliche Verantwortung</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/constanze.jpg">
+              <source src="videos/constanze.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://ccc.de" target="_blank">
+                <p class="title">Constanze Kurz</p>
+                <p class="subtitle">Sprecherin des Chaos Computer Clubs</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/ulf.jpg">
+              <source src="videos/ulf.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://freiheitsrechte.org" target="_blank">
+                <p class="title">Ulf Buermeyer</p>
+                <p class="subtitle">Vorsitzender der Gesellschaft für Freiheitsrechte</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/markus.jpg">
+              <source src="videos/markus.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://twitter.com/netzpolitik" target="_blank">
+                <p class="title">Markus Beckedahl</p>
+                <p class="subtitle">Gründer re:publica & netzpolitik.org</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/anke.jpg">
+              <source src="videos/anke.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://twitter.com/anked" target="_blank">
+                <p class="title">Anke Domscheit-Berg</p>
+                <p class="subtitle">Netzpolitische Sprecherin der Linksfraktion im Bundestag</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster/thomas.jpg">
+              <source src="videos/thomas.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://socialhack.eu" target="_blank">
+                <p class="title">Thomas Lohninger</p>
+                <p class="subtitle">Geschäftsführer von epicenter.works</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
       </div>
     </section>
-    <section class="section hero is-medium is-primary">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
+<div style="margin-top: -100px"></div>
+    <section id="unterstuetzende-section">
+      <a class="anchor" name="unterstuetzende"></a>
+      <h2>Unterstützende Organisationen</h2>
 
-            <a class="anchor" name="testimonials"></a>
-            <h2 class="title is-2 has-text-centered">Testimonials</h2>
+      <div class="columns is-multiline">
 
-            <div id="testimonials-content" class="columns is-multiline">
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/constanze.jpg">
-                    <source src="videos/constanze.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://ccc.de" target="_blank">
-                    <p>
-                      <b>Constanze Kurz</b>
-                      <br />
-                      Sprecherin des Chaos Computer Clubs
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/katta.jpg">
-                    <source src="videos/katta.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://kattascha.de" target="_blank">
-                    <p>
-                      <b>Katharina Nocun</b>
-                      <br />
-                      Netzaktivistin & Buchautorin
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/ulf.jpg">
-                    <source src="videos/ulf.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://freiheitsrechte.org/" target="_blank">
-                    <p>
-                      <b>Ulf Buermeyer</b>
-                      <br />
-                      Vorsitzender Gesellschaft f. Freiheitsrechte
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/markus.jpg">
-                    <source src="videos/markus.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://twitter.com/netzpolitik" target="_blank">
-                    <p>
-                      <b>Markus Beckedahl</b>
-                      <br />
-                      Gründer re:publica & netzpolitik.org
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/anke.jpg">
-                    <source src="videos/anke.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://twitter.com/anked" target="_blank">
-                    <p>
-                      <b>Anke Domscheit-Berg</b>
-                      <br />
-                      Netzpolitische Sprecherin Linksfraktion
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/thomas.jpg">
-                    <source src="videos/thomas.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://socialhack.eu/" target="_blank">
-                    <p>
-                      <b>Thomas Lohninger</b>
-                      <br />
-                      Geschäftsführer epicenter.works
-                    </p>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/rainer.jpg">
-                    <source src="videos/rainer.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://www.weizenbaum-institut.de/portrait/p/rainer-rehak/" target="_blank">
-                    <p>
-                      <b>Rainer Rehak</b>
-                      <br />
-                      Stellv. Vorsitzender des Forum InformatikerInnen f. Frieden & gesellschaftliche Verantwortung 
-                    </p>
-                  </a>
-                </div>
-              </div>
-
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://ccc.de" target="_blank">
+                <img src="img/logo/ccc.jpg">
+              </a>
             </div>
-          </div>
+            <div class="card-content">
+              <a href="https://ccc.de" target="_blank">
+                <p class="title">Chaos Computer Club e.V.</p>
+              </a>
+            </div>
+          </article>
         </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://digitalegesellschaft.de" target="_blank">
+                <img src="img/logo/dg.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://digitalegesellschaft.de" target="_blank">
+                <p class="title">Digitale Gesellschaft e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://d-64.org" target="_blank">
+                <img src="img/logo/d64.svg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://d-64.org" target="_blank">
+                <p class="title">D64 Zentrum für Digitalen Fortschritt e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://fiff.de" target="_blank">
+                <img src="img/logo/fiff.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://fiff.de" target="_blank">
+                <p class="title"><span class="is-hidden-tablet">Forum InformatikerInnen für Frieden und gesellschaftliche Verantwortung e.V.</span><span class="is-hidden-mobile">FIfF e.V.</span></p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://digitale-freiheit.jetzt" target="_blank">
+                <img src="img/logo/df.svg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://digitale-freiheit.jetzt" target="_blank">
+                <p class="title">Digitale Freiheit e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://digitalcourage.de" target="_blank">
+                <img src="img/logo/dc.png">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://digitalcourage.de" target="_blank">
+                <p class="title">Digitalcourage e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
       </div>
     </section>
-<div style="margin-top: -150px"></div>
-    <section class="section hero is-medium is-primary">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <a class="anchor" name="unterstuetzende"></a>
-            <h2 class="title is-2 has-text-centered">Unter&shy;stützende</h2>
+    <footer>
+      <a name="footer" class="anchor"></a>
 
-            <div class="columns is-multiline">
+      <h2>
+        Über das Projekt
+      </h2>
 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://ccc.de" target="_blank">
-                    <img src="img/logo-chaosknoten.jpg">
-              	  <p><b>Chaos Computer Club e.V.</b></p>
-                  </a>
-                </div>
-              </div>
- 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://digitalegesellschaft.de/" target="_blank">
-                    <img src="img/digiges.jpg">
-              	  <p><b>Digitale Gesellschaft e.V.</b></p>
-                  </a>
-                </div>
-              </div>
- 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://fiff.de/" target="_blank">
-                    <img src="img/fiff.jpg">
-              	  <p><b>Forum InformatikerInnen für Frieden und gesellschaftliche Verantwortung e.V.</b></p>
-                  </a>
-                </div>
-              </div>
+      <p>
+        Getragen wird das Projekt von den unterstützenden Organisationen, initiiert wurde es von <a href="https://digitale-freiheit.jetzt" target="_blank">Digitale Freiheit</a>.
+      </p>
 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox">
-                  <a href="https://digitale-freiheit.jetzt/" target="_blank">
-                    <img src="img/logo_rund.png">
-              	  <p><b>Digitale Freiheit</b></p>
-                  </a>
-                </div>
-              </div>
- 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://digitalcourage.de/" target="_blank">
-                    <img src="img/logo-dc.png">
-              	  <p><b>Digitalcourage e.V.</b></p>
-                  </a>
-                </div>
-              </div>
+      <br />
 
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer is-size-5">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-
-            <h2 class="title is-2 has-text-centered">
-              <a name="ueber-das-projekt"></a>
-              Über das Projekt
-            </h2>
-
-            <div class="columns">
-              <div class="column">
-                <p>
-                  Getragen wird das Projekt von den unterstützenden Organisationen, initiiert wurde es von <a href="https://digitale-freiheit.jetzt" target="_blank">Digitale Freiheit</a>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <a href="/impressum.html">Impressum</a>
-            <a href="/datenschutz.html">Datenschutz</a>
-          </div>
-        </div>
-      </div>
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
     </footer>
   </div>
 </body>
