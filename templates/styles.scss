@@ -55,6 +55,32 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0,
 section {
   margin-bottom: 0 !important;
   padding: 6rem 1.5rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .title;
+    @extend .is-2;
+    @extend .has-text-centered;
+  }
+}
+
+.hero {
+  h1, h2, h3, h4, h5, h6 {
+    @extend .title;
+    @extend .is-2;
+    @extend .has-text-centered;
+  }
+
+  .card {
+    .title {
+      @extend .is-5;
+      @extend .has-text-black;
+    }
+
+    .subtitle {
+      @extend .is-6;
+      @extend .has-text-black;
+    }
+  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -75,10 +101,6 @@ section {
 
 .has-shadow {
   text-shadow: 2px 2px 10px #000;
-}
-
-.is-twice-as-big {
-
 }
 
 .navbar .container {
@@ -145,10 +167,10 @@ section {
   @extend .is-large;
   margin-bottom: 0;
 
-
     .button {
       width: 100%;
       height: 100px;
+      margin: 1.5em 0;
       @extend .is-primary;
     }
 }
@@ -158,9 +180,57 @@ video {
   display: block;
 }
  
-#testimonials-section .card {
-  height: 100%;
+#testimonials-section {
+
+  @extend .hero;
+  @extend .is-medium;
+  @extend .is-primary;
+
+  .card {
+    height: 100%;
+  }
 }
+
+#unterstuetzende-section {
+
+  @extend .hero;
+  @extend .is-medium;
+  @extend .is-primary;
+
+  .card {
+    height: 100%;
+    .card-image {
+
+@media screen and (min-width: $tablet) {
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
+}
+
+      a {
+@media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+}
+
+@media screen and (max-width: $tablet) {
+        min-height: 200px;
+}
+
+        border: 1em solid transparent;
+        border-bottom: 0;
+        display: flex;
+        img {
+@media screen and (max-width: $tablet) {
+          max-height: 200px;
+}
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
 
 .argumente .columns {
   margin-top: 20px;

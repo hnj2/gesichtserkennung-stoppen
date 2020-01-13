@@ -55,11 +55,9 @@ html/action.html: 							\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
-templates/.testimonials.html:	templates/testimonials.sh \
-								templates/testimonials-*.html
-	templates/testimonials.sh> templates/.testimonials.html
+templates/.testimonials.html:	templates/testimonials.sh
+	templates/testimonials.sh >templates/.testimonials.html
 
 
 templates/.unterstuetzer.html: templates/unterstuetzer.sh
-	templates/unterstuetzer.sh> templates/.unterstuetzer.html
-	templates/unterstuetzer.sh
+	templates/unterstuetzer.sh >templates/.unterstuetzer.html
