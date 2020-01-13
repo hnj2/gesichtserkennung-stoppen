@@ -97,7 +97,7 @@
     min-height: 24px;
     min-width: 24px;
     width: 24px; }
-  .is-large.delete, .delete#forderungen-section, .delete#was-kann-ich-tun, .is-large.modal-close, .modal-close#forderungen-section, .modal-close#was-kann-ich-tun {
+  .is-large.delete, .is-large.modal-close {
     height: 32px;
     max-height: 32px;
     max-width: 32px;
@@ -1177,7 +1177,7 @@ a.box:active {
   white-space: nowrap; }
   .button strong {
     color: inherit; }
-  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.page-title, .button .icon#title-small, .button .icon#title-large, .button .icon#testimonials-section, .button .icon#unterstuetzende-section, .button .icon.is-large, .button .icon#forderungen-section, .button .icon#was-kann-ich-tun {
+  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.page-title, .button .icon#title-small, .button .icon#title-large, .button .icon#testimonials-section, .button .icon#unterstuetzende-section, .button .icon.is-large {
     height: 1.5em;
     width: 1.5em; }
   .button .icon:first-child:not(:last-child) {
@@ -2013,7 +2013,7 @@ a.box:active {
     font-size: 1rem; }
   .button.is-medium, .button.page-title, .button#title-small, .button#title-large, .button#testimonials-section, .button#unterstuetzende-section {
     font-size: 1.25rem; }
-  .button.is-large, .button#forderungen-section, .button#was-kann-ich-tun {
+  .button.is-large {
     font-size: 1.5rem; }
   .button[disabled],
   fieldset[disabled] .button {
@@ -2056,10 +2056,10 @@ a.box:active {
     margin-bottom: -0.5rem; }
   .buttons:not(:last-child) {
     margin-bottom: 1rem; }
-  .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.page-title):not(#title-small):not(#title-large):not(#testimonials-section):not(#unterstuetzende-section):not(.is-large):not(#forderungen-section):not(#was-kann-ich-tun) {
+  .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.page-title):not(#title-small):not(#title-large):not(#testimonials-section):not(#unterstuetzende-section):not(.is-large) {
     border-radius: 2px;
     font-size: 0.75rem; }
-  .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large):not(#forderungen-section):not(#was-kann-ich-tun) {
+  .buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large) {
     font-size: 1.25rem; }
   .buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium):not(.page-title):not(#title-small):not(#title-large):not(#testimonials-section):not(#unterstuetzende-section) {
     font-size: 1.5rem; }
@@ -2310,7 +2310,7 @@ a.box:active {
 .content.is-medium, .content.page-title, .content#title-small, .content#title-large, .page-title#forderungen-section, .page-title#was-kann-ich-tun, .is-medium#forderungen-section, .is-medium#was-kann-ich-tun, .content#testimonials-section, .content#unterstuetzende-section {
   font-size: 1.25rem; }
 
-.content.is-large, #forderungen-section, #was-kann-ich-tun {
+.content.is-large, .is-large#forderungen-section, .is-large#was-kann-ich-tun {
   font-size: 1.5rem; }
 
 .icon {
@@ -2325,7 +2325,7 @@ a.box:active {
   .icon.is-medium, .icon.page-title, .icon#title-small, .icon#title-large, .icon#testimonials-section, .icon#unterstuetzende-section {
     height: 2rem;
     width: 2rem; }
-  .icon.is-large, .icon#forderungen-section, .icon#was-kann-ich-tun {
+  .icon.is-large {
     height: 3rem;
     width: 3rem; }
 
@@ -2584,7 +2584,7 @@ a.box:active {
     height: 0.75rem; }
   .progress.is-medium, .progress.page-title, .progress#title-small, .progress#title-large, .progress#testimonials-section, .progress#unterstuetzende-section {
     height: 1.25rem; }
-  .progress.is-large, .progress#forderungen-section, .progress#was-kann-ich-tun {
+  .progress.is-large {
     height: 1.5rem; }
 
 @keyframes moveIndeterminate {
@@ -2746,7 +2746,7 @@ a.box:active {
     margin-bottom: -0.5rem; }
   .tags:not(:last-child) {
     margin-bottom: 1rem; }
-  .tags.are-medium .tag:not(.is-normal):not(.is-large):not(#forderungen-section):not(#was-kann-ich-tun) {
+  .tags.are-medium .tag:not(.is-normal):not(.is-large) {
     font-size: 1rem; }
   .tags.are-large .tag:not(.is-normal):not(.is-medium):not(.page-title):not(#title-small):not(#title-large):not(#testimonials-section):not(#unterstuetzende-section) {
     font-size: 1.25rem; }
@@ -2839,7 +2839,7 @@ a.box:active {
     font-size: 0.75rem; }
   .tag:not(body).is-medium, .tag.page-title:not(body), .tag#title-small:not(body), .tag#title-large:not(body), .tag#testimonials-section:not(body), .tag#unterstuetzende-section:not(body) {
     font-size: 1rem; }
-  .tag:not(body).is-large, .tag#forderungen-section:not(body), .tag#was-kann-ich-tun:not(body) {
+  .tag:not(body).is-large {
     font-size: 1.25rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
     margin-left: -0.375em;
@@ -3143,7 +3143,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .is-medium.input, .input.page-title, .input#title-small, .input#title-large, .input#testimonials-section, .input#unterstuetzende-section, .is-medium.textarea, .textarea.page-title, .textarea#title-small, .textarea#title-large, .textarea#testimonials-section, .textarea#unterstuetzende-section {
     font-size: 1.25rem; }
-  .is-large.input, .input#forderungen-section, .input#was-kann-ich-tun, .is-large.textarea, .textarea#forderungen-section, .textarea#was-kann-ich-tun {
+  .is-large.input, .is-large.textarea {
     font-size: 1.5rem; }
   .is-fullwidth.input, .is-fullwidth.textarea {
     display: block;
@@ -3315,7 +3315,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .select.is-medium, .select.page-title, .select#title-small, .select#title-large, .select#testimonials-section, .select#unterstuetzende-section {
     font-size: 1.25rem; }
-  .select.is-large, .select#forderungen-section, .select#was-kann-ich-tun {
+  .select.is-large {
     font-size: 1.5rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a; }
@@ -3333,7 +3333,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .select.is-loading.is-medium:after, .select.is-loading.page-title:after, .select.is-loading#title-small:after, .select.is-loading#title-large:after, .select.is-loading#testimonials-section:after, .select.is-loading#unterstuetzende-section:after {
     font-size: 1.25rem; }
-  .select.is-loading.is-large:after, .select.is-loading#forderungen-section:after, .select.is-loading#was-kann-ich-tun:after {
+  .select.is-loading.is-large:after {
     font-size: 1.5rem; }
 
 .file {
@@ -3507,9 +3507,9 @@ a.tag:hover {
     font-size: 1.25rem; }
     .file.is-medium .file-icon .fa, .file.page-title .file-icon .fa, .file#title-small .file-icon .fa, .file#title-large .file-icon .fa, .file#testimonials-section .file-icon .fa, .file#unterstuetzende-section .file-icon .fa {
       font-size: 21px; }
-  .file.is-large, .file#forderungen-section, .file#was-kann-ich-tun {
+  .file.is-large {
     font-size: 1.5rem; }
-    .file.is-large .file-icon .fa, .file#forderungen-section .file-icon .fa, .file#was-kann-ich-tun .file-icon .fa {
+    .file.is-large .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
     border-bottom-right-radius: 0;
@@ -3538,7 +3538,7 @@ a.tag:hover {
     font-size: 14px; }
   .file.is-boxed.is-medium .file-icon .fa, .file.is-boxed.page-title .file-icon .fa, .file.is-boxed#title-small .file-icon .fa, .file.is-boxed#title-large .file-icon .fa, .file.is-boxed#testimonials-section .file-icon .fa, .file.is-boxed#unterstuetzende-section .file-icon .fa {
     font-size: 28px; }
-  .file.is-boxed.is-large .file-icon .fa, .file.is-boxed#forderungen-section .file-icon .fa, .file.is-boxed#was-kann-ich-tun .file-icon .fa {
+  .file.is-boxed.is-large .file-icon .fa {
     font-size: 35px; }
   .file.is-boxed.has-name .file-cta {
     border-radius: 4px 4px 0 0; }
@@ -3632,7 +3632,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .label.is-medium, .label.page-title, .label#title-small, .label#title-large, .label#testimonials-section, .label#unterstuetzende-section {
     font-size: 1.25rem; }
-  .label.is-large, .label#forderungen-section, .label#was-kann-ich-tun {
+  .label.is-large {
     font-size: 1.5rem; }
 
 .help {
@@ -3769,7 +3769,7 @@ a.tag:hover {
     .field-label.is-medium, .field-label.page-title, .field-label#title-small, .field-label#title-large, .field-label#testimonials-section, .field-label#unterstuetzende-section {
       font-size: 1.25rem;
       padding-top: 0.375em; }
-    .field-label.is-large, .field-label#forderungen-section, .field-label#was-kann-ich-tun {
+    .field-label.is-large {
       font-size: 1.5rem;
       padding-top: 0.375em; } }
 
@@ -3819,13 +3819,9 @@ a.tag:hover {
   .control.has-icons-right .select#testimonials-section ~ .icon,
   .control.has-icons-right .select#unterstuetzende-section ~ .icon {
     font-size: 1.25rem; }
-  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left .input#forderungen-section ~ .icon, .control.has-icons-left .input#was-kann-ich-tun ~ .icon,
-  .control.has-icons-left .select.is-large ~ .icon,
-  .control.has-icons-left .select#forderungen-section ~ .icon,
-  .control.has-icons-left .select#was-kann-ich-tun ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right .input#forderungen-section ~ .icon, .control.has-icons-right .input#was-kann-ich-tun ~ .icon,
-  .control.has-icons-right .select.is-large ~ .icon,
-  .control.has-icons-right .select#forderungen-section ~ .icon,
-  .control.has-icons-right .select#was-kann-ich-tun ~ .icon {
+  .control.has-icons-left .input.is-large ~ .icon,
+  .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
+  .control.has-icons-right .select.is-large ~ .icon {
     font-size: 1.5rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
     color: #dbdbdb;
@@ -3854,7 +3850,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after, .control.is-loading.page-title:after, .control.is-loading#title-small:after, .control.is-loading#title-large:after, .control.is-loading#testimonials-section:after, .control.is-loading#unterstuetzende-section:after {
     font-size: 1.25rem; }
-  .control.is-loading.is-large:after, .control.is-loading#forderungen-section:after, .control.is-loading#was-kann-ich-tun:after {
+  .control.is-loading.is-large:after {
     font-size: 1.5rem; }
 
 .breadcrumb {
@@ -3900,7 +3896,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .breadcrumb.is-medium, .breadcrumb.page-title, .breadcrumb#title-small, .breadcrumb#title-large, .breadcrumb#testimonials-section, .breadcrumb#unterstuetzende-section {
     font-size: 1.25rem; }
-  .breadcrumb.is-large, .breadcrumb#forderungen-section, .breadcrumb#was-kann-ich-tun {
+  .breadcrumb.is-large {
     font-size: 1.5rem; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "\02192"; }
@@ -4147,7 +4143,7 @@ a.list-item {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
     margin-top: 1rem;
     padding-top: 1rem; }
-  .media.is-large + .media, .media#forderungen-section + .media, .media#was-kann-ich-tun + .media {
+  .media.is-large + .media {
     margin-top: 1.5rem;
     padding-top: 1.5rem; }
 
@@ -4179,7 +4175,7 @@ a.list-item {
     font-size: 0.75rem; }
   .menu.is-medium, .menu.page-title, .menu#title-small, .menu#title-large, .menu#testimonials-section, .menu#unterstuetzende-section {
     font-size: 1.25rem; }
-  .menu.is-large, .menu#forderungen-section, .menu#was-kann-ich-tun {
+  .menu.is-large {
     font-size: 1.5rem; }
 
 .menu-list {
@@ -4223,7 +4219,7 @@ a.list-item {
     font-size: 0.75rem; }
   .message.is-medium, .message.page-title, .message#title-small, .message#title-large, .message#testimonials-section, .message#unterstuetzende-section {
     font-size: 1.25rem; }
-  .message.is-large, .message#forderungen-section, .message#was-kann-ich-tun {
+  .message.is-large {
     font-size: 1.5rem; }
   .message.is-white {
     background-color: white; }
@@ -5395,7 +5391,7 @@ a.navbar-item,
     font-size: 0.75rem; }
   .pagination.is-medium, .pagination.page-title, .pagination#title-small, .pagination#title-large, .pagination#testimonials-section, .pagination#unterstuetzende-section {
     font-size: 1.25rem; }
-  .pagination.is-large, .pagination#forderungen-section, .pagination#was-kann-ich-tun {
+  .pagination.is-large {
     font-size: 1.5rem; }
   .pagination.is-rounded .pagination-previous,
   .pagination.is-rounded .pagination-next {
@@ -5762,7 +5758,7 @@ label.panel-block {
     font-size: 0.75rem; }
   .tabs.is-medium, .tabs.page-title, .tabs#title-small, .tabs#title-large, .tabs#testimonials-section, .tabs#unterstuetzende-section {
     font-size: 1.25rem; }
-  .tabs.is-large, .tabs#forderungen-section, .tabs#was-kann-ich-tun {
+  .tabs.is-large {
     font-size: 1.5rem; }
 
 .column {
@@ -7846,7 +7842,7 @@ label.panel-block {
       padding-bottom: 9rem;
       padding-top: 9rem; } }
   @media screen and (min-width: 769px), print {
-    .hero.is-large .hero-body, .is-large.page-title .hero-body, .is-large#title-small .hero-body, .is-large#title-large .hero-body, #forderungen-section .hero-body, #was-kann-ich-tun .hero-body, .is-large#testimonials-section .hero-body, .is-large#unterstuetzende-section .hero-body {
+    .hero.is-large .hero-body, .is-large.page-title .hero-body, .is-large#title-small .hero-body, .is-large#title-large .hero-body, .is-large#forderungen-section .hero-body, .is-large#was-kann-ich-tun .hero-body, .is-large#testimonials-section .hero-body, .is-large#unterstuetzende-section .hero-body {
       padding-bottom: 18rem;
       padding-top: 18rem; } }
   .hero.is-halfheight .hero-body, .is-halfheight.page-title .hero-body, .is-halfheight#title-small .hero-body, .is-halfheight#title-large .hero-body, .is-halfheight#forderungen-section .hero-body, .is-halfheight#was-kann-ich-tun .hero-body, .is-halfheight#testimonials-section .hero-body, .is-halfheight#unterstuetzende-section .hero-body, .hero.is-fullheight .hero-body, .is-fullheight.page-title .hero-body, .is-fullheight#title-small .hero-body, .is-fullheight#title-large .hero-body, .is-fullheight#forderungen-section .hero-body, .is-fullheight#was-kann-ich-tun .hero-body, .is-fullheight#testimonials-section .hero-body, .is-fullheight#unterstuetzende-section .hero-body, .hero.is-fullheight-with-navbar .hero-body, .is-fullheight-with-navbar.page-title .hero-body, .is-fullheight-with-navbar#title-small .hero-body, .is-fullheight-with-navbar#title-large .hero-body, .is-fullheight-with-navbar#forderungen-section .hero-body, .is-fullheight-with-navbar#was-kann-ich-tun .hero-body, .is-fullheight-with-navbar#testimonials-section .hero-body, .is-fullheight-with-navbar#unterstuetzende-section .hero-body {
@@ -7904,7 +7900,7 @@ label.panel-block {
   @media screen and (min-width: 1024px) {
     .section.is-medium, .section.page-title, .section#title-small, .section#title-large, .section#testimonials-section, .section#unterstuetzende-section {
       padding: 9rem 1.5rem; }
-    .section.is-large, .section#forderungen-section, .section#was-kann-ich-tun {
+    .section.is-large {
       padding: 18rem 1.5rem; } }
 
 .footer {
@@ -7976,6 +7972,9 @@ p.button {
 
 #forderungen-section, #was-kann-ich-tun {
   margin-bottom: 0; }
+  @media screen and (min-width: 1024px) {
+    #forderungen-section, #was-kann-ich-tun {
+      font-size: 1.4rem !important; } }
   #forderungen-section a.column, #was-kann-ich-tun a.column {
     margin-top: 1.5em;
     margin-bottom: 1.5em; }

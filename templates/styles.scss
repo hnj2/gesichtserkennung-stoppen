@@ -204,7 +204,9 @@ p.button {
   @extend .hero;
   @extend .is-info;
   @extend .content;
-  @extend .is-large;
+@media screen and (min-width: $desktop) {
+  font-size: 1.4rem !important;
+}
   margin-bottom: 0;
 
 
