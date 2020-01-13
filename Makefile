@@ -36,8 +36,6 @@ html/presse.html:							\
 		templates/header.html				\
 		templates/title-small.html			\
 		templates/pressemitteilung.html		\
-		templates/.testimonials.html		\
-		templates/minusspace.html			\
 		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
