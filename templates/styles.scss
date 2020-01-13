@@ -92,6 +92,10 @@ section, footer {
   }
 }
 
+p.button {
+  white-space: normal;
+}
+
 //////////////////////////////////
 // Navbar
 
@@ -203,12 +207,18 @@ section, footer {
   @extend .is-large;
   margin-bottom: 0;
 
+
+  a.column {
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
     .button {
       width: 100%;
       height: 100px;
-      margin: 1.5em 0;
       @extend .is-primary;
     }
+  }
 }
 
 video {

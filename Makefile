@@ -24,6 +24,7 @@ html/index.html:							\
 html/aufruf.html:							\
 	 	templates/header.html				\
 		templates/title-small.html			\
+		templates/argumente-lang.html		\
 		templates/forderungen-lang.html		\
 		templates/.unterstuetzer.html		\
 		templates/minusspace.html			\
