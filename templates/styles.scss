@@ -54,6 +54,7 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0,
 body {
   @extend .is-size-5;
   @extend .has-background-dark;
+  @extend .has-navbar-fixed-top;
 }
 
 section, footer {
@@ -119,61 +120,81 @@ section, footer {
 //////////////////////////////////
 // Titles
 
-#large-title {
+.page-title {
+  @extend .hero;
+  @extend .is-medium;
+  @extend .is-primary;
+  @extend .has-navbar-fixed-top;
+
   padding: 0;
 
   .hero-body {
-    padding-top: 80px;
-    padding-bottom: 40px;
-  }
-  
-  img {
-    opacity: 0.7;
-    border: 1px solid white;
-  }
-  
-  .noface {
-    width: 100%;
-    padding: 0;
-    opacity: 0.7;
-    border: 1px solid white;
-  }
-  
-  .noface:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 450%;
-    font-family: CABNDWeb-Bold;
-  }
-  
-  h1 span {
-    padding: .2em .3em 0;
-    background-color: #875ED8;
+    padding: 5rem 0;
+
+    h1 {
+      @extend .is-spaced;
+      @extend .is-uppercase;
+
+      text-align: center;
+      font-family: CABNDWeb-Bold;
+      font-size: 3em;
+@media screen and (min-width: $widescreen) {
+      font-size: 4em;
+}
+@media screen and (max-width: $desktop) {
+      font-size: 2em;
+}
+@media screen and (max-width: $tablet) {
+      font-size: 1.5em;
+}
+    }
+
+    h1 span {
+      padding: .2em .3em 0;
+      background-color: #875ED8;
+    }
   }
 }
 
-#small-title {
-  .hero-body {
-    padding-bottom: 100px;
-  }
 
-  h1 {
-    text-align: center;
-    font-size: 450%;
-    font-family: CABNDWeb-Bold;
-  }
-  
-  h1 span {
-    padding: .2em .3em 0;
-    background-color: #875ED8;
-  }
+#title-small {
+  @extend .page-title;
 }
 
+#title-large {
+  @extend .page-title;
+}
+
+@media screen and (min-width: $desktop) {
+  #title-large {
+    .hero-body {
+  
+      padding: 20px 0;
+  
+      h1 {
+        padding-bottom: 20px;
+      }
+      
+      img {
+        opacity: 0.7;
+        border: 1px solid white;
+      }
+      
+      .noface {
+        width: 100%;
+        padding: 0;
+        opacity: 0.7;
+        border: 1px solid white;
+      }
+      
+      .noface:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+  }
+}
 
 #forderungen-section {
   @extend .hero;

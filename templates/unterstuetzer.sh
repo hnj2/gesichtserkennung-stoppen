@@ -3,7 +3,7 @@
 cat <<EOF
     <section id="unterstuetzende-section">
       <a class="anchor" name="unterstuetzende"></a>
-      <h2>Unterstützende</h2>
+      <h2>Unterstützende Organisationen</h2>
 
       <div class="columns is-multiline">
 EOF

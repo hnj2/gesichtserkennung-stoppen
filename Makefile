@@ -25,7 +25,7 @@ html/aufruf.html:							\
 	 	templates/header.html				\
 		templates/title-small.html			\
 		templates/forderungen-lang.html		\
-		templates/unterstuetzer.html		\
+		templates/.unterstuetzer.html		\
 		templates/minusspace.html			\
 		templates/.testimonials.html		\
 		templates/footer.html
@@ -37,7 +37,7 @@ html/presse.html:							\
 		templates/pressemitteilung.html		\
 		templates/.testimonials.html		\
 		templates/minusspace.html			\
-		templates/unterstuetzer.html		\
+		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
@@ -51,7 +51,7 @@ html/action.html: 							\
 		templates/was-kann-ich-tun.html		\
 		templates/.testimonials.html		\
 		templates/minusspace.html			\
-		templates/unterstuetzer.html		\
+		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
