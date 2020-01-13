@@ -3,7 +3,8 @@ generate: 					\
 		html/aufruf.html	\
 		html/presse.html	\
 		html/pm.html		\
-		html/action.html
+		html/action.html	\
+		html/mail_confirmed.html
 
 diff:
 	@bash ./diff.sh
@@ -28,6 +29,14 @@ html/aufruf.html:							\
 		templates/unterstuetzer.html		\
 		templates/minusspace.html			\
 		templates/testimonials.html			\
+		templates/footer.html
+	($(addprefix cat , $(addsuffix ;, $^))) >$@
+
+html/mail_confirmed.html:					\
+		templates/header.html				\
+		templates/title-small.html			\
+		templates/mail_confirm.html			\
+		templates/unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
