@@ -7,15 +7,13 @@ services:
         build: ./sass-watcher
         volumes:
             - "./html/css:/app/css"
-            - "./templates/styles.scss:/app/sass/styles.scss:ro"
+            - "./templates:/app/sass:ro"
 
     html-watcher:
         image: watch-make
         build: ./html-watcher
         volumes:
-            - "./html:/app/html"
-            - "./Makefile:/app/Makefile:ro"
-            - "./templates:/app/templates:ro"
+            - ".:/app"
 
     http-server:
         image: python:2-alpine

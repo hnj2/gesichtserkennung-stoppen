@@ -38,17 +38,69 @@ $info: $blue;
 
 $family-primary: "InriaBold";
 
+$card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0, 0.04);
+
 //$footer-background-color: $primary;
 //$footer-color: true;
 //$footer-padding: 1rem 1.5rem 1rem;
-
 
 // 4. Import the rest of Bulma
 
 @import "../node_modules/bulma/bulma";
 
-h2 {
-  font-family: "CABNDWeb-Bold";
+//////////////////////////////////
+// global layout
+
+body {
+  @extend .is-size-5;
+  @extend .has-background-dark;
+  @extend .has-navbar-fixed-top;
+}
+
+section, footer {
+  margin-bottom: 0 !important;
+  padding: 6rem 1.5rem;
+
+@media screen and (min-width: $desktop) {
+  padding: 6rem 15%;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .title;
+    @extend .is-2;
+    @extend .has-text-centered;
+  }
+}
+
+.hero {
+  h1, h2, h3, h4, h5, h6 {
+    @extend .title;
+    @extend .is-2;
+    @extend .has-text-centered;
+  }
+
+  .card {
+    .title {
+      @extend .is-5;
+      @extend .has-text-black;
+    }
+
+    .subtitle {
+      @extend .is-6;
+      @extend .has-text-black;
+    }
+  }
+}
+
+p.button {
+  white-space: normal;
+}
+
+//////////////////////////////////
+// Navbar
+
+.navbar {
+  @extend .is-size-6;
 }
 
 .navbar-brand a {
@@ -56,7 +108,7 @@ h2 {
   font-size: 120%;
 }
 
-a.anchor {
+.anchor {
   padding-top: 120px;
   margin-top: -120px;
 }
@@ -65,96 +117,184 @@ a.anchor {
   text-shadow: 2px 2px 10px #000;
 }
 
-.is-twice-as-big {
-
-}
-
 .navbar .container {
   padding: 0 12px;
 }
 
-#large-title .hero-body {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
+//////////////////////////////////
+// Titles
 
-#large-title img {
-  opacity: 0.7;
-  border: 1px solid white;
-}
+.page-title {
+  @extend .hero;
+  @extend .is-medium;
+  @extend .is-primary;
+  @extend .has-navbar-fixed-top;
 
-#large-title .noface {
-  width: 100%;
   padding: 0;
-  opacity: 0.7;
-  border: 1px solid white;
+
+  .hero-body {
+    padding: 5rem 0;
+
+    h1 {
+      @extend .is-spaced;
+      @extend .is-uppercase;
+
+      text-align: center;
+      font-family: CABNDWeb-Bold;
+      font-size: 3em;
+@media screen and (min-width: $widescreen) {
+      font-size: 4em;
+}
+@media screen and (max-width: $desktop) {
+      font-size: 2em;
+}
+@media screen and (max-width: $tablet) {
+      font-size: 1.5em;
+}
+    }
+
+    h1 span {
+      padding: .2em .3em 0;
+      background-color: #875ED8;
+    }
+  }
 }
 
-#large-title .noface:after {
-  content: "";
+
+#title-small {
+  @extend .page-title;
+}
+
+#title-large {
+  @extend .page-title;
+}
+
+@media screen and (min-width: $desktop) {
+  #title-large {
+    .hero-body {
+  
+      padding: 20px 0;
+  
+      h1 {
+        padding-bottom: 20px;
+      }
+      
+      img {
+        opacity: 0.7;
+        border: 1px solid white;
+      }
+      
+      .noface {
+        width: 100%;
+        padding: 0;
+        opacity: 0.7;
+        border: 1px solid white;
+      }
+      
+      .noface:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+  }
+}
+
+#forderungen-section, #was-kann-ich-tun {
+  @extend .hero;
+  @extend .is-info;
+  @extend .content;
+@media screen and (min-width: $desktop) {
+  font-size: 1.4rem !important;
+}
+  margin-bottom: 0;
+
+
+  a.column {
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
+    .button {
+      width: 100%;
+      height: 100px;
+      @extend .is-primary;
+    }
+  }
+}
+
+video {
+  width: 100%;
   display: block;
-  padding-bottom: 100%;
+}
+ 
+#testimonials-section {
+
+  @extend .hero;
+  @extend .is-medium;
+  @extend .is-primary;
+
+  .card {
+    height: 100%;
+  }
 }
 
-#large-title h1 {
-  text-align: center;
-  font-size: 450%;
-  font-family: CABNDWeb-Bold;
+#unterstuetzende-section {
+
+  @extend .hero;
+  @extend .is-medium;
+  @extend .is-primary;
+
+  .card {
+    height: 100%;
+    .card-image {
+
+@media screen and (min-width: $tablet) {
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
 }
 
-#large-title h1 span {
-  padding: .2em .3em 0;
-  background-color: #875ED8;
+      a {
+@media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
 }
 
-#small-title .hero-body {
-  padding-bottom: 100px;
+@media screen and (max-width: $tablet) {
+        min-height: 200px;
 }
 
-#small-title h1 {
-  text-align: center;
-  font-size: 450%;
-  font-family: CABNDWeb-Bold;
+        border: 1em solid transparent;
+        border-bottom: 0;
+        display: flex;
+        img {
+@media screen and (max-width: $tablet) {
+          max-height: 200px;
+          max-width: 300px;
+}
+          margin: auto;
+        }
+      }
+    }
+  }
 }
 
-#small-title h1 span {
-  padding: .2em .3em 0;
-  background-color: #875ED8;
-}
+#argumente {
+  .columns {
+    margin-top: 20px;
+    h1, h2, h3, h4, h5, h6 {
+      text-align: left !important;
+    }
 
-.whitebox {
-  background-color: white;
-  color: black;
-  padding: 10px;
-  height: 100%;
-  text-align: center;
-}
+  }
 
-.whitebox img {
-  max-height: 250px;
-}
-
-#testimonials-content .whitebox p b {
-  font-size: 1.3em;
-}
-
-#testimonials-content .whitebox p {
-  font-size: 1.1em;
-}
-
-.whitebox a p {
-  color: black;
-}
-
-.argumente .columns {
-  margin-top: 20px;
-}
-
-.argumente .columns:before {
-  content: "";
-  display: block;
-  height: 30px;
-  @extend .is-hidden-desktop;
+  .columns:before {
+    content: "";
+    display: block;
+    height: 30px;
+    @extend .is-hidden-desktop;
+  }
 }
 
 .footer {
