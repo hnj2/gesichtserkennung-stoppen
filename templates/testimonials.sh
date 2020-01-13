@@ -13,8 +13,8 @@ make_box () {
 
         <div class="column is-half">
           <article class="card">
-            <video class="is-16by9" controls preload="none" poster="video_poster\/SHORTNAME.jpg">
-              <source src="videos\/SHORTNAME.mp4" type="video\/mp4">
+            <video class="is-16by9" controls preload="none" poster="video_poster/SHORTNAME.jpg">
+              <source src="videos/SHORTNAME.mp4" type="video/mp4">
             </video>
             <div class="card-content">
               <a href="LINK" target="_blank">
