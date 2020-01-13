@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="has-background-dark">
-  <nav class="navbar is-fixed-top is-hidden-touch" role="navigation" aria-label="main navigation">
+<body>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item is-tab" href="/">
-            Gesichtserkennung-Stoppen.de
+            Gesichtserkennung Stoppen
             <!--
             <img src="img/gesichter/face1.jpg" width="50px" height="50px">
             -->
           </a>
 
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -29,9 +29,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
 
-            <div class="navbar-start">
+            <div class="navbar-start" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
               <a class="navbar-item is-tab" href="/#forderungen">
                 Forderungen
+              </a>
+              <a class="navbar-item is-tab" href="action.html">
+                Was kann ich tun?
+              </a>
+              <a class="navbar-item is-tab" href="/#testimonials">
+                Testimonials
               </a>
               <a class="navbar-item is-tab" href="aufruf.html#aufruf">
                 Aufruf
@@ -39,16 +45,13 @@
               <a class="navbar-item is-tab" href="#unterstuetzende">
                 Unterstützende
               </a>
-              <a class="navbar-item is-tab" href="#testimonials">
-                Testimonials
-              </a>
-              <a class="navbar-item is-tab" href="pm.html">
+              <a class="navbar-item is-tab" href="presse.html">
                 Pressemitteilung
               </a>
             </div>
 
             <div class="navbar-end">
-              <a class="navbar-item is-tab" href="/#ueber-das-projekt">
+              <a class="navbar-item is-tab" href="#footer">
                 Über das Projekt
               </a>
             </div>
@@ -58,7 +61,7 @@
   </nav>     
 
   <div class="container has-background-white">
-    <section id="large-title" class="hero is-medium is-primary">
+    <section id="title-large">
       <div class="hero-body">
 
         <div class="columns is-hidden-touch">
@@ -89,17 +92,13 @@
           </div>
         </div>
 
-        <div class="columns">
-          <div class="column is-10-desktop is-offset-1-desktop">
-            <a href="/">
-              <h1 class="title is-1 is-size-3-touch is-spaced is-uppercase"><span>
-                Keine Gesichts&shy;erkennung
-              </span><br /><span>
-                zur Massen&shy;überwachung
-              </span></h1>
-            </a>
-          </div>
-        </div>
+        <a href="/">
+          <h1><span>
+            Keine Gesichts&shy;erkennung
+          </span><br /><span>
+            zur Massen&shy;überwachung
+          </span></h1>
+        </a>
 
         <div class="columns is-hidden-touch">
           <div class="column is-10 is-offset-1">
@@ -160,342 +159,313 @@
 
       </div>
     </section>
-    <section class="section hero is-medium is-info is-size-5">
-      <a class="anchor" name="forderungen"></a>
-      <div class="columns">
-        <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              Wenige Überwachungsmaßnahmen bedrohen Freiheitsrechte und Demokratie so sehr wie automatische Gesichtserkennung: Sie macht Fehler, sie diskriminiert Frauen und People of Colour und gefährdet die anonyme Teilnahme an
-              Demonstrationen.
-            </p>
-            </br>
-            <p>
-              Aber es zeigt sich international Widerstand. In mehreren Städten der USA wurde Gesichtserkennung bereits verboten. Im Stadtrat von San Francisco wurde sie als "gefährliche Waffe" bezeichnet, die inkompatibel mit einer gesunden Demokratie sei.
-            </p>
-            </br>
-            <p> <b>
-              <a class="white" href="https://www.spiegel.de/panorama/justiz/bundespolizei-gesichtserkennungssysteme-an-vielen-flughaefen-und-bahnhoefen-geplant-a-1303523.html" style="color:white"> In Deutschland hingegen soll sie an 135 Bahnhöfen und 14 Flughäfen eingesetzt werden. </a>
-            </b></p>
-            </br>
-            <p>
-              Das wollen wir verhindern und zeigen:  <b>Gesichtserkennung ist es nicht wert. Der Schaden, den sie an Demokratie und Freiheitsrechten anrichtet, ist immens. Ein Zugewinn an öffentlicher Sicherheit dagegen zweifelhaft.</b>
-            </p>
-            </br>
-            </br>
-        </div>
+    <section id="forderungen-section">
+      <a id="forderungen" class="anchor"></a>
+      <p>
+        Wenige Überwachungsmaßnahmen bedrohen Freiheitsrechte und Demokratie so sehr wie automatische Gesichtserkennung: Sie macht Fehler, sie diskriminiert Frauen und People of Colour und gefährdet die anonyme Teilnahme an
+        Demonstrationen.
+      </p>
+
+      <h1>Unsere Forderungen</h1>
+
+      <div class="columns is-mobile">
+        <h3 class="column is-narrow is-1-widescreen is-offset-1-tablet is-size-1 has-text-right">
+          1.
+        </h3>
+        <p class="column is-9-tablet">
+          Ein Verbot automatischer Gesichtserkennung in der Öffentlichkeit durch die Polizei oder andere staatliche Akteure.
+        </p>
+      </div>
+      <div class="columns is-mobile">
+        <h3 class="column is-narrow is-1-widescreen is-offset-1-tablet is-size-1 has-text-right">
+          2.
+        </h3>
+        <p class="column is-9-tablet">
+          Wirksames Vorgehen gegen Terroranschläge durch soziale Präventions- und Aussteigerprogramme statt ungezielter Massenüberwachung.
+        </p>
       </div>
 
+      <div class="columns">
+        <a href="/action.html" class="column is-half is-offset-one-quarter">
+          <p class="button title is-size-3">
+            Was kann ich tun?
+          </p>
+        </a>
+      </div>
+
+      <p>
+        Aber es zeigt sich international Widerstand. In mehreren Städten der USA wurde Gesichtserkennung bereits verboten. Im Stadtrat von San Francisco wurde sie als "gefährliche Waffe" bezeichnet, die inkompatibel mit einer gesunden Demokratie sei.
+      </p>
+      </br>
+      <p> <b>
+        <a class="white" href="https://www.spiegel.de/panorama/justiz/bundespolizei-gesichtserkennungssysteme-an-vielen-flughaefen-und-bahnhoefen-geplant-a-1303523.html" style="color:white"> In Deutschland hingegen soll sie an 135 Bahnhöfen und 14 Flughäfen eingesetzt werden. </a>
+      </b></p>
+      </br>
+      <p>
+        Das wollen wir verhindern und zeigen:  <b>Gesichtserkennung ist es nicht wert. Der Schaden, den sie an Demokratie und Freiheitsrechten anrichtet, ist immens. Ein Zugewinn an öffentlicher Sicherheit dagegen zweifelhaft.</b>
+      </p>
 
       <div class="columns">
-        <div class="column is-10-desktop is-offset-1-desktop">
-          <div class="content">
-            <h2 class="title is-2 has-text-centered">Unsere Forderungen</h2>
-          </div>
-        </div>
+        <a href="/aufruf.html" class="column is-half is-offset-one-quarter">
+          <p class="button title is-size-3">
+            Aufruf lesen!
+          </p>
+        </a>
       </div>
-      <div class="columns">
-        <div class="column is-7-desktop is-offset-2-desktop">
-          <div class="content">
-            <div class="columns is-mobile">
-              <div class="column">
-                <h3 class="title is-1 has-text-right">1.</h3>
-              </div>
-              <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-three-quarters">
-                Ein Verbot automatischer Gesichtserkennung in der Öffentlichkeit durch die Polizei oder andere staatliche Akteure.
-              </div>
-            </div>
-            <div class="columns is-mobile">
-              <div class="column">
-                <h3 class="title is-2 has-text-right">2.</h3>
-              </div>
-              <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-three-quarters">
-                Wirksames Vorgehen gegen Terroranschläge durch soziale Präventions- und Aussteigerprogramme statt ungezielter Massenüberwachung.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-10-desktop is-offset-1-desktop">
-          <div class="content">
-            <center><a class="button is-large is-size-6-mobile is-primary is-hcentered" href="/aufruf.html">
-                Jetzt den Aufruf lesen und unterstützen
+
+    </section>
+    <section id="testimonials-section">
+      <a class="anchor" name="testimonials"></a>
+      <h2>Testimonials</h2>
+
+      <div class="columns is-multiline">
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/katta.jpg">
+              <source src="videos\/katta.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://kattascha.de" target="_blank">
+                <p class="title">Katharina Nocun</p>
+                <p class="subtitle">Netzaktivistin & Buchautorin</p>
               </a>
-            </center>
-          </div>
+            </div>
+          </article>
         </div>
-      </div>
 
-      <h2 class="title is-3 has-text-centered" style="margin-top:1em">Oder noch besser: Werden Sie aktiv!</h2>
-      <div class="columns" >
-        <div class="column is-10-desktop is-offset-1-desktop">
-          <div class="content">
-            <center><a class="button is-large is-size-6-mobile is-primary is-hcentered" href="/action.html">
-                Jetzt online Abgeordnete kontaktieren
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/rainer.jpg">
+              <source src="videos\/rainer.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://www.weizenbaum-institut.de/portrait/p/rainer-rehak/" target="_blank">
+                <p class="title">Rainer Rehak</p>
+                <p class="subtitle">Stellv. Vorsitzender des Forum InformatikerInnen für Frieden & gesellschaftliche Verantwortung</p>
               </a>
-            </center>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/constanze.jpg">
+              <source src="videos\/constanze.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://ccc.de" target="_blank">
+                <p class="title">Constanze Kurz</p>
+                <p class="subtitle">Sprecherin des Chaos Computer Clubs</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/ulf.jpg">
+              <source src="videos\/ulf.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://freiheitsrechte.org" target="_blank">
+                <p class="title">Ulf Buermeyer</p>
+                <p class="subtitle">Vorsitzender der Gesellschaft für Freiheitsrechte</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/markus.jpg">
+              <source src="videos\/markus.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://twitter.com/netzpolitik" target="_blank">
+                <p class="title">Markus Beckedahl</p>
+                <p class="subtitle">Gründer re:publica & netzpolitik.org</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/anke.jpg">
+              <source src="videos\/anke.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://twitter.com/anked" target="_blank">
+                <p class="title">Anke Domscheit-Berg</p>
+                <p class="subtitle">Netzpolitische Sprecherin der Linksfraktion im Bundestag</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-half">
+          <article class="card">
+            <video class="is-16by9" controls preload="none" poster="video_poster\/thomas.jpg">
+              <source src="videos\/thomas.mp4" type="video\/mp4">
+            </video>
+            <div class="card-content">
+              <a href="https://socialhack.eu" target="_blank">
+                <p class="title">Thomas Lohninger</p>
+                <p class="subtitle">Geschäftsführer von epicenter.works</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div id="argumente" class="content">
+        <h2>Warum Gesichts&shy;erkennung verbieten?</h2>
+        <div class="columns">
+          <div class="column">
+            <h3>Falsch&shy;erkennung</h3>
+          </div>
+          <div class="column is-two-thirds">
+            Die Systeme funktionieren mangelhaft. Beim Test am Bahnhof Berlin-Südkreuz wurde ca. jede 200. Person fälschlich als gesuchte Person erkannt. Für Betroffene führt das zu unangenehmen Kontrollen, für die Polizei zu einer Überlastung
+            durch Fehlalarme.
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h3>Einfache Umgehung</h3>
+          </div>
+          <div class="column is-two-thirds">
+            Dreht eine gesuchte Person ihr Gesicht nur um 15 Grad von den Kameras weg, wird sie von den Systemen nicht mehr erkannt. Wer eine Straftat plant, kann sich einfach vor Erkennung schützen.
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h3>Diskriminierung</h3>
+          </div>
+          <div class="column is-two-thirds">
+            Gesichtserkennung diskriminiert Frauen, Kinder und People of Colour. Bei diesen Gruppen liegen die Falscherkennungsraten signifikant höher als bei weißen Männern. Die negativen Folgen treffen also besonders Gruppen, die ohnehin schon
+            Benachteiligungen ausgesetzt sind.
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h3>Gefahr für die Demokratie</h3>
+          </div>
+          <div class="column is-two-thirds">
+            Selbst wenn Gesichtserkennung perfekt funktionieren würde: Sie wäre dann in der Lage, ganze Stadtgebiete zu überwachen und die Identität von Zehn- oder Hunderttausenden von Menschen gleichzeitig zu erfassen. Durch das ständige Gefühl,
+            überwacht zu werden, leiden Freiheitsrechte, individuelle Entfaltung und politische Teilhabe.
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h3>Missbrauchs&shy;potential</h3>
+          </div>
+          <div class="column is-two-thirds">
+            Gesichtserkennung birgt enormes Missbrauchspotential für Unbefugte und etwaige zukünftige autoritäre Regierungen. Zivilgesellschaftliches Engagement gegen eine Regierung, die exakt weiß, wer wann wo ist, ist nur schwer denkbar.
           </div>
         </div>
       </div>
     </section>
-    <section class="section hero is-medium is-primary">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
+    <section id="unterstuetzende-section">
+      <a class="anchor" name="unterstuetzende"></a>
+      <h2>Unterstützende Organisationen</h2>
 
-            <a class="anchor" name="testimonials"></a>
-            <h2 class="title is-2 has-text-centered">Testimonials</h2>
+      <div class="columns is-multiline">
 
-            <div id="testimonials-content" class="columns is-multiline">
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/constanze.jpg">
-                    <source src="videos/constanze.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://ccc.de" target="_blank">
-                    <p>
-                      <b>Constanze Kurz</b>
-                      <br />
-                      Sprecherin des Chaos Computer Clubs
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/katta.jpg">
-                    <source src="videos/katta.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://kattascha.de" target="_blank">
-                    <p>
-                      <b>Katharina Nocun</b>
-                      <br />
-                      Netzaktivistin & Buchautorin
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/ulf.jpg">
-                    <source src="videos/ulf.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://freiheitsrechte.org/" target="_blank">
-                    <p>
-                      <b>Ulf Buermeyer</b>
-                      <br />
-                      Vorsitzender Gesellschaft f. Freiheitsrechte
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/markus.jpg">
-                    <source src="videos/markus.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://twitter.com/netzpolitik" target="_blank">
-                    <p>
-                      <b>Markus Beckedahl</b>
-                      <br />
-                      Gründer re:publica & netzpolitik.org
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/anke.jpg">
-                    <source src="videos/anke.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://twitter.com/anked" target="_blank">
-                    <p>
-                      <b>Anke Domscheit-Berg</b>
-                      <br />
-                      Netzpolitische Sprecherin Linksfraktion
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/thomas.jpg">
-                    <source src="videos/thomas.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://socialhack.eu/" target="_blank">
-                    <p>
-                      <b>Thomas Lohninger</b>
-                      <br />
-                      Geschäftsführer epicenter.works
-                    </p>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="column is-half">
-                <div class="whitebox">
-                  <video controls preload="none" poster="video_poster/rainer.jpg">
-                    <source src="videos/rainer.mp4" type="video/mp4">
-                  </video>
-                  <a href="https://www.weizenbaum-institut.de/portrait/p/rainer-rehak/" target="_blank">
-                    <p>
-                      <b>Rainer Rehak</b>
-                      <br />
-                      Stellv. Vorsitzender des Forum InformatikerInnen f. Frieden & gesellschaftliche Verantwortung 
-                    </p>
-                  </a>
-                </div>
-              </div>
-
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://ccc.de" target="_blank">
+                <img src="img/logo/ccc.jpg">
+              </a>
             </div>
-          </div>
+            <div class="card-content">
+              <a href="https://ccc.de" target="_blank">
+                <p class="title">Chaos Computer Club e.V.</p>
+              </a>
+            </div>
+          </article>
         </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://digitalegesellschaft.de" target="_blank">
+                <img src="img/logo/dg.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://digitalegesellschaft.de" target="_blank">
+                <p class="title">Digitale Gesellschaft e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://fiff.de" target="_blank">
+                <img src="img/logo/fiff.jpg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://fiff.de" target="_blank">
+                <p class="title"><span class="is-hidden-tablet">Forum InformatikerInnen für Frieden und gesellschaftliche Verantwortung e.V.</span><span class="is-hidden-mobile">FIfF e.V.</span></p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://digitale-freiheit.jetzt" target="_blank">
+                <img src="img/logo/df.svg">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://digitale-freiheit.jetzt" target="_blank">
+                <p class="title">Digitale Freiheit e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="card" >
+            <div class="card-image">
+              <a href="https://digitalcourage.de" target="_blank">
+                <img src="img/logo/dc.png">
+              </a>
+            </div>
+            <div class="card-content">
+              <a href="https://digitalcourage.de" target="_blank">
+                <p class="title">Digitalcourage e.V.</p>
+              </a>
+            </div>
+          </article>
+        </div>
+
       </div>
     </section>
-    <section class="section is-size-5">
-      <div class="columns">
-        <div class="column is-8-desktop is-offset-2-desktop">
-          <div class="content argumente">
-            <h2 class="title is-2 has-text-centered">Warum Gesichts&shy;erkennung verbieten?</h2>
-            <div class="columns">
-              <div class="column">
-                <h3>Falsch&shy;erkennung</h3>
-              </div>
-              <div class="column is-two-thirds">
-                Die Systeme funktionieren mangelhaft. Beim Test am Bahnhof Berlin-Südkreuz wurde ca. jede 200. Person fälschlich als gesuchte Person erkannt. Für Betroffene führt das zu unangenehmen Kontrollen, für die Polizei zu einer Überlastung
-                durch Fehlalarme.
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <h3>Einfache Umgehung</h3>
-              </div>
-              <div class="column is-two-thirds">
-                Dreht eine gesuchte Person ihr Gesicht nur um 15 Grad von den Kameras weg, wird sie von den Systemen nicht mehr erkannt. Wer eine Straftat plant, kann sich einfach vor Erkennung schützen.
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <h3>Diskriminierung</h3>
-              </div>
-              <div class="column is-two-thirds">
-                Gesichtserkennung diskriminiert Frauen, Kinder und People of Colour. Bei diesen Gruppen liegen die Falscherkennungsraten signifikant höher als bei weißen Männern. Die negativen Folgen treffen also besonders Gruppen, die ohnehin schon
-                Benachteiligungen ausgesetzt sind.
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <h3>Gefahr für die Demokratie</h3>
-              </div>
-              <div class="column is-two-thirds">
-                Selbst wenn Gesichtserkennung perfekt funktionieren würde: Sie wäre dann in der Lage, ganze Stadtgebiete zu überwachen und die Identität von Zehn- oder Hunderttausenden von Menschen gleichzeitig zu erfassen. Durch das ständige Gefühl,
-                überwacht zu werden, leiden Freiheitsrechte, individuelle Entfaltung und politische Teilhabe.
-              </div>
-            </div>
-            <div class="columns">
-              <div class="column">
-                <h3>Missbrauchs&shy;potential</h3>
-              </div>
-              <div class="column is-two-thirds">
-                Gesichtserkennung birgt enormes Missbrauchspotential für Unbefugte und etwaige zukünftige autoritäre Regierungen. Zivilgesellschaftliches Engagement gegen eine Regierung, die exakt weiß, wer wann wo ist, ist nur schwer denkbar.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section hero is-medium is-primary">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <a class="anchor" name="unterstuetzende"></a>
-            <h2 class="title is-2 has-text-centered">Unter&shy;stützende</h2>
+    <footer>
+      <a name="footer" class="anchor"></a>
 
-            <div class="columns is-multiline">
+      <h2>
+        Über das Projekt
+      </h2>
 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://ccc.de" target="_blank">
-                    <img src="img/logo-chaosknoten.jpg">
-              	  <p><b>Chaos Computer Club e.V.</b></p>
-                  </a>
-                </div>
-              </div>
- 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://digitalegesellschaft.de/" target="_blank">
-                    <img src="img/digiges.jpg">
-              	  <p><b>Digitale Gesellschaft e.V.</b></p>
-                  </a>
-                </div>
-              </div>
- 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://fiff.de/" target="_blank">
-                    <img src="img/fiff.jpg">
-              	  <p><b>Forum InformatikerInnen für Frieden und gesellschaftliche Verantwortung e.V.</b></p>
-                  </a>
-                </div>
-              </div>
+      <p>
+        Getragen wird das Projekt von den unterstützenden Organisationen, initiiert wurde es von <a href="https://digitale-freiheit.jetzt" target="_blank">Digitale Freiheit</a>.
+      </p>
 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox">
-                  <a href="https://digitale-freiheit.jetzt/" target="_blank">
-                    <img src="img/logo_rund.png">
-              	  <p><b>Digitale Freiheit</b></p>
-                  </a>
-                </div>
-              </div>
- 
-              <div class="column is-half-tablet is-one-third-desktop">
-                <div class="whitebox" >
-                  <a href="https://digitalcourage.de/" target="_blank">
-                    <img src="img/logo-dc.png">
-              	  <p><b>Digitalcourage e.V.</b></p>
-                  </a>
-                </div>
-              </div>
+      <br />
 
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer is-size-5">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-
-            <h2 class="title is-2 has-text-centered">
-              <a name="ueber-das-projekt"></a>
-              Über das Projekt
-            </h2>
-
-            <div class="columns">
-              <div class="column">
-                <p>
-                  Getragen wird das Projekt von den unterstützenden Organisationen, initiiert wurde es von <a href="https://digitale-freiheit.jetzt" target="_blank">Digitale Freiheit</a>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <a href="/impressum.html">Impressum</a>
-            <a href="/datenschutz.html">Datenschutz</a>
-          </div>
-        </div>
-      </div>
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
     </footer>
   </div>
 </body>

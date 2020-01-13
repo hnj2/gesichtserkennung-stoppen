@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="has-background-dark">
-  <nav class="navbar is-fixed-top is-hidden-touch" role="navigation" aria-label="main navigation">
+<body>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item is-tab" href="/">
-            Gesichtserkennung-Stoppen.de
+            Gesichtserkennung Stoppen
             <!--
             <img src="img/gesichter/face1.jpg" width="50px" height="50px">
             -->
           </a>
 
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -29,9 +29,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
 
-            <div class="navbar-start">
+            <div class="navbar-start" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
               <a class="navbar-item is-tab" href="/#forderungen">
                 Forderungen
+              </a>
+              <a class="navbar-item is-tab" href="action.html">
+                Was kann ich tun?
+              </a>
+              <a class="navbar-item is-tab" href="/#testimonials">
+                Testimonials
               </a>
               <a class="navbar-item is-tab" href="aufruf.html#aufruf">
                 Aufruf
@@ -39,16 +45,13 @@
               <a class="navbar-item is-tab" href="#unterstuetzende">
                 Unterstützende
               </a>
-              <a class="navbar-item is-tab" href="#testimonials">
-                Testimonials
-              </a>
-              <a class="navbar-item is-tab" href="pm.html">
+              <a class="navbar-item is-tab" href="presse.html">
                 Pressemitteilung
               </a>
             </div>
 
             <div class="navbar-end">
-              <a class="navbar-item is-tab" href="/#ueber-das-projekt">
+              <a class="navbar-item is-tab" href="#footer">
                 Über das Projekt
               </a>
             </div>
