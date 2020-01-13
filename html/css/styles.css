@@ -8014,7 +8014,8 @@ video {
       margin: auto; }
       @media screen and (max-width: 769px) {
         #unterstuetzende-section .card .card-image a img {
-          max-height: 200px; } }
+          max-height: 200px;
+          max-width: 300px; } }
 
 #argumente .columns {
   margin-top: 20px; }
