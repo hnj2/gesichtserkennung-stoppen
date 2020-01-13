@@ -48,13 +48,21 @@ $card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0,
 
 @import "../node_modules/bulma/bulma";
 
-//.title {
-//  font-family: "CABNDWeb-Bold";
-//}
+//////////////////////////////////
+// global layout
 
-section {
+body {
+  @extend .is-size-5;
+  @extend .has-background-dark;
+}
+
+section, footer {
   margin-bottom: 0 !important;
   padding: 6rem 1.5rem;
+
+@media screen and (min-width: $desktop) {
+  padding: 6rem 15%;
+}
 
   h1, h2, h3, h4, h5, h6 {
     @extend .title;
@@ -83,10 +91,11 @@ section {
   }
 }
 
-@media screen and (min-width: $desktop) {
-  section {
-    padding: 6rem 15%;
-  }
+//////////////////////////////////
+// Navbar
+
+.navbar {
+  @extend .is-size-6;
 }
 
 .navbar-brand a {
@@ -106,6 +115,9 @@ section {
 .navbar .container {
   padding: 0 12px;
 }
+
+//////////////////////////////////
+// Titles
 
 #large-title {
   padding: 0;
@@ -145,22 +157,25 @@ section {
   }
 }
 
-#small-title .hero-body {
-  padding-bottom: 100px;
+#small-title {
+  .hero-body {
+    padding-bottom: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 450%;
+    font-family: CABNDWeb-Bold;
+  }
+  
+  h1 span {
+    padding: .2em .3em 0;
+    background-color: #875ED8;
+  }
 }
 
-#small-title h1 {
-  text-align: center;
-  font-size: 450%;
-  font-family: CABNDWeb-Bold;
-}
 
-#small-title h1 span {
-  padding: .2em .3em 0;
-  background-color: #875ED8;
-}
-
-.forderungen-section {
+#forderungen-section {
   @extend .hero;
   @extend .is-info;
   @extend .content;
