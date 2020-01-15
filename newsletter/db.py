@@ -25,14 +25,18 @@ def get_guid_for_mail(mailaddress):
     c = get_db().cursor()
     succ = c.execute('SELECT guid FROM mails WHERE mailad=(?)', (mailaddress,))
     if succ:
-        guid = c.fetchone()[0]
-        return guid
+        guid = c.fetchone()
+        if guid:
+            return guid[0]
+        else:
+            return False
     else: 
         return False
 
 def delete_mail(real_guid):
-    c = get_db()
+    c = get_db().cursor()
     succ = c.execute('DELETE FROM mails WHERE guid=?', (real_guid,))
+    get_db().commit()
     return succ  
 
 def confirm_mail(real_guid):

@@ -1,0 +1,9 @@
+Hallo!
+
+Vielen Dank, dass du dich für den "Gesichtserkennung Stoppen" Newsletter angemeldet hast.
+
+Bitte bestätige deine Anmeldung durch einen Klick auf den unten aufgeführten Link.
+
+{{ url_for('confirm', mailaddress=mailaddress, user_guid=user_guid,  _external=True) }}
+
+Danke
