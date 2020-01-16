@@ -5,7 +5,7 @@ SSH_REMOTE="df@df.uber.space"
 rsync_diff() {
     local_folder=$1
     remote_folder=$2
-    rsync=$(rsync --dry-run --delete -rvc "$local_folder" "$SSH_REMOTE:$remote_folder")
+    rsync=$(rsync --dry-run --delete --exclude "__pycache__" --exclude "sqlite.db" -rvc "$local_folder" "$SSH_REMOTE:$remote_folder")
     
     #echo "## rsync dry run:"
     #echo "$rsync"

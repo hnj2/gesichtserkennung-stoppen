@@ -95,5 +95,5 @@ def close_connection(exception):
         dbs.close()
 
 if __name__ == "__main__":
-	init()
+	init_db()
 	app.run()
