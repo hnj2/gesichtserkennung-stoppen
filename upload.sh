@@ -17,6 +17,6 @@ read -p "Do you want to override the live website? (type \"Yes\"): "
 if [[ $REPLY =~ ^Yes$ ]]; then
 
     rsync --delete -rvc html/ df@df.uber.space:html
-    rsync --delete --exclude "__pycache__" -rvc newsletter/ df@df.uber.space:newsletter
+    rsync --delete --exclude "__pycache__" --exclude "sqlite.db" -rvc newsletter/ df@df.uber.space:newsletter
 
 fi
