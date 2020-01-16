@@ -1,29 +1,33 @@
 #/bin/bash
 
-rsync=$(rsync --dry-run --delete -rvc html/ df@df.uber.space:html)
+SSH_REMOTE="df@df.uber.space"
 
-#echo "## rsync dry run:"
-#echo "$rsync"
-#echo
-
-files=$(echo "$rsync" | head --lines=-3 | tail --lines=+2)
-onlyhost=$(echo "$files" | grep -E "^deleting .+" | sed "s/deleting \(\)/\1/")
-
-get_diff_files() {
-    ssh df@df.uber.space "
-    for file in $@; do
-        if test -e html/\$file; then
-            echo \$file
-        fi
-    done
-    "
-}
-
-updatefiles=$(echo "$files" | grep -vE "^deleting .+")
-differ=$(get_diff_files $updatefiles)
-onlylocal=${updatefiles/$differ}
-
-printdiff() {
+rsync_diff() {
+    local_folder=$1
+    remote_folder=$2
+    rsync=$(rsync --dry-run --delete -rvc "$local_folder" "$SSH_REMOTE:$remote_folder")
+    
+    #echo "## rsync dry run:"
+    #echo "$rsync"
+    #echo
+    
+    files=$(echo "$rsync" | head --lines=-3 | tail --lines=+2)
+    onlyhost=$(echo "$files" | grep -E "^deleting .+" | sed "s/deleting \(\)/\1/")
+    
+    get_diff_files() {
+        ssh "$SSH_REMOTE" "
+        for file in $@; do
+            if test -e $remote_folder/\$file; then
+                echo \$file
+            fi
+        done
+        "
+    }
+    
+    updatefiles=$(echo "$files" | grep -vE "^deleting .+")
+    differ=$(get_diff_files $updatefiles)
+    onlylocal=${updatefiles/$differ}
+    
     if ! test -z "$onlylocal"; then
         echo "## files only local:"
         echo "$onlylocal"
@@ -41,11 +45,14 @@ printdiff() {
     
         for file in $differ; do
             echo "## diff [local]/$file [host]/$file"
-            diff html/$file <(ssh df@df.uber.space "cat html/$file")
+            diff "$local_folder/$file" <(ssh "$SSH_REMOTE" "cat $remote_folder/$file")
             echo
         done
     fi
 }
 
-printdiff | less
+(
+    rsync_diff html/ html;
+    rsync_diff newsletter/ newsletter
+) | less
 
