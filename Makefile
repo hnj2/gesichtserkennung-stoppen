@@ -1,9 +1,12 @@
+
+#Neue Dateien hier hinzufügen!
 generate: 					\
 		html/index.html		\
 		html/aufruf.html	\
 		html/presse.html	\
 		html/pm.html		\
-		html/action.html
+		html/action.html	\
+		html/pressespiegel.html
 
 diff:
 	@bash ./diff.sh
@@ -39,11 +42,17 @@ html/presse.html:							\
 		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
-
 html/pm.html: html/presse.html
 	cp html/presse.html html/pm.html
 
 
+html/pressespiegel.html:					\
+		templates/header.html				\
+		templates/title-small.html			\
+		templates/pressespiegel.html		\
+		templates/.unterstuetzer.html		\
+		templates/footer.html
+	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
 html/action.html: 							\
 		templates/header.html				\
