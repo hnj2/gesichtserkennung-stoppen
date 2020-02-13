@@ -41,6 +41,14 @@ fiff_long="Forum InformatikerInnen für Frieden und gesellschaftliche Verantwort
 make_box fiff.jpg "<span class=\"is-hidden-tablet\">$fiff_long<\/span><span class=\"is-hidden-mobile\">FIfF e.V.<\/span>" "https:\/\/fiff.de"
 make_box df.svg "Digitale Freiheit e.V." "https:\/\/digitale-freiheit.jetzt"
 make_box dc.png "Digitalcourage e.V." "https:\/\/digitalcourage.de"
+make_box hu.jpg "Humanistische Union e.V." "https:\/\/www.humanistische-union.de"
+make_box sd.png "Selbstbestimmt.Digital e.V." "https:\/\/www.selbstbestimmt-digital.de"
+make_box topio.jpg "Topio \/\/\/ public space for privacy" "https:\/\/www.topio.info"
+make_box gw.png "Germanwatch" "https:\/\/germanwatch.org"
+make_box gi.svg "Gesellschaft für Informatik" "https:\/\/gi.de"
+
+
+
 #make_box "" ""
 
 cat <<EOF
