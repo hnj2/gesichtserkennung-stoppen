@@ -9,7 +9,33 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
  
-<body>
+<body onload="if (!document.cookie.includes('no-campaign')) document.getElementById('campaign-notification').classList.remove('is-hidden')">
+
+  <div id="campaign-notification" class="is-hidden">
+    <button class="delete" onclick="document.getElementById('campaign-notification').classList.add('is-hidden'); document.cookie='no-campaign'"></button>
+    <div class="level">
+      <div class="campaign-img level-item">
+        <img src="http://digitale-freiheit.jetzt/wp-content/uploads/2020/11/2521-1024-e1605203928262-1024x599.png" alt="">
+      </div>
+      <div class="campaign-text level-item">
+        <div class="content">
+          <h1>The international ReclaimYourFace Campaign has started!</h1>
+          <p>
+            Many European Digital Rights Organizations say: Biometric Surveillance has to be banned!
+          </p>
+          <p>
+            <a class="is-primary" style="color: white" href="https://reclaimyourface.eu/">
+              Join the campaign now!
+            </a>
+            <button onclick="document.getElementById('campaign-notification').classList.add('is-hidden'); document.cookie='no-campaign'">
+              Weiter zur Website
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">

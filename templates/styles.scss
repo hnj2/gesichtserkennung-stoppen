@@ -97,6 +97,53 @@ p.button {
 }
 
 //////////////////////////////////
+// Campaign Notification
+
+#campaign-notification {
+
+  // Use bulma notification styles
+  @extend .notification;
+
+  // Put at the bottom of the screen
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  margin: 0 !important;
+  bottom: 0;
+
+  max-height: 300px;
+
+  .campaign-img {
+    img {
+      max-height: 280px;
+    }
+  }
+
+  .campaign-text {
+    min-width: 70%;
+
+    h1, h2, h3, h4, h5, h6 {
+      @extend .block;
+      @extend .title;
+      @extend .is-2;
+    }
+
+    p {
+      @extend .block;
+      @extend .is-size-4;
+    }
+
+    a, button {
+      @extend .button;
+      //@extend .is-size-4;
+      @extend .is-size-4;
+      margin-right: 24px;
+    }
+  }
+}
+
+//////////////////////////////////
 // Navbar
 
 .navbar {
