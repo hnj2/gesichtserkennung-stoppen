@@ -50,6 +50,8 @@ make_box anke "Anke Domscheit-Berg" "Netzpolitische Sprecherin der Linksfraktion
 
 make_box thomas "Thomas Lohninger" "Geschäftsführer von epicenter.works" "https:\/\/socialhack.eu"
 
+make_box andreas "Andreas Eschbach" "Buchautor" "https:\/\/www.andreaseschbach.de"
+
 cat <<EOF
 
       </div>
