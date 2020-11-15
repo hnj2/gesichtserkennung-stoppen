@@ -40,6 +40,8 @@ $family-primary: "InriaBold";
 
 $card-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.2), 0 0px 0 1px rgba(0, 0, 0, 0.04);
 
+$navbar-breakpoint: 1025px;
+
 //$footer-background-color: $primary;
 //$footer-color: true;
 //$footer-padding: 1rem 1.5rem 1rem;
@@ -104,42 +106,66 @@ p.button {
   // Use bulma notification styles
   @extend .notification;
 
-  // Put at the bottom of the screen
+  // Is a block above other content
   display: block;
-  position: fixed;
   z-index: 1000;
   width: 100%;
-  margin: 0 !important;
-  bottom: 0;
 
-  max-height: 300px;
+@media screen and (max-width: -1 + $desktop) {
+  // Put scrollable above content
+  position: absolute;
+  top: 30%;
+}
+@media screen and (min-width: $desktop) {
+  // Put at the bottom of the screen
+  position: fixed;
+  bottom: 0;
+  margin: 0 !important;
+}
 
   .campaign-img {
+    @extend .column;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
     img {
       max-height: 280px;
     }
   }
 
   .campaign-text {
+    @extend .column;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     min-width: 70%;
 
     h1, h2, h3, h4, h5, h6 {
       @extend .block;
       @extend .title;
-      @extend .is-2;
+      @extend .is-2-desktop;
+      @extend .is-7-touch;
     }
 
     p {
       @extend .block;
-      @extend .is-size-4;
+      @extend .is-size-4-desktop;
+      @extend .is-size-5-touch;
     }
 
     a, button {
       @extend .button;
-      //@extend .is-size-4;
-      @extend .is-size-4;
+      @extend .is-size-4-desktop;
+      @extend .is-size-5-touch;
       margin-right: 24px;
+      margin-bottom: 24px;
     }
+
+    margin-bottom: -24px;
   }
 }
 
