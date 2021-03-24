@@ -34,6 +34,7 @@ EOF
 }
 
 make_box ccc.jpg "Chaos Computer Club e.V." "https:\/\/ccc.de"
+make_box ai.png  "Amnesty International e.V." "https:\/\/www.amnesty.de"
 make_box dg.jpg  "Digitale Gesellschaft e.V." "https:\/\/digitalegesellschaft.de"
 make_box d64.svg  "D64 Zentrum für Digitalen Fortschritt e.V." "https:\/\/d-64.org"
 make_box ryf.png "ReclaimYourFace" "https:\/\/reclaimyourface.eu"
