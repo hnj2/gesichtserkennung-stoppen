@@ -344,7 +344,7 @@ video {
         img {
 @media screen and (max-width: $tablet) {
           max-height: 200px;
-          max-width: 300px;
+          max-width: min(300px, 100%);
 }
           margin: auto;
         }
