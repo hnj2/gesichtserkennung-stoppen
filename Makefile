@@ -8,6 +8,9 @@ generate: 					\
 		html/action.html	\
 		html/pressespiegel.html
 
+test: generate
+	@python3 -m http.server -d html -b 127.0.0.1 8888
+
 diff:
 	@bash ./diff.sh
 
