@@ -44,9 +44,9 @@ make_box ulf "Ulf Buermeyer" "Vorsitzender der Gesellschaft für Freiheitsrechte
 
 make_box markus "Markus Beckedahl" "Gründer re:publica \& netzpolitik.org" "https:\/\/twitter.com\/netzpolitik"
 
-make_box konstantin "Konstantin von Notz" "Bundestagsfraktion Bündnis 90 \/ Die Grünen" "https:\/\/www.von-notz.de"
+#make_box konstantin "Konstantin von Notz" "Bundestagsfraktion Bündnis 90 \/ Die Grünen" "https:\/\/www.von-notz.de"
 
-make_box anke "Anke Domscheit-Berg" "Netzpolitische Sprecherin der Linksfraktion im Bundestag" "https:\/\/twitter.com\/anked"
+#make_box anke "Anke Domscheit-Berg" "Netzpolitische Sprecherin der Linksfraktion im Bundestag" "https:\/\/twitter.com\/anked"
 
 make_box thomas "Thomas Lohninger" "Geschäftsführer von epicenter.works" "https:\/\/socialhack.eu"
 
