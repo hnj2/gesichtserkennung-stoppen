@@ -2,9 +2,7 @@
 #Neue Dateien hier hinzufügen!
 generate: 					\
 		html/index.html		\
-		html/aufruf.html	\
-		html/action.html	\
-		html/pressespiegel.html
+		html/action.html
 
 test: generate
 	@python3 -m http.server -d html -b 127.0.0.1 8888
