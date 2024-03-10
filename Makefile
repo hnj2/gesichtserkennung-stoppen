@@ -3,8 +3,6 @@
 generate: 					\
 		html/index.html		\
 		html/aufruf.html	\
-		html/presse.html	\
-		html/pm.html		\
 		html/action.html	\
 		html/pressespiegel.html
 
