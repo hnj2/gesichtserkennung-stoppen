@@ -17,8 +17,8 @@ html/index.html:							\
 	 	templates/header.html				\
 		templates/title-large.html			\
 		templates/forderungen-kurz.html		\
+		templates/argumente-lang.html		\
 		templates/.testimonials.html		\
-		templates/argumente-kurz.html		\
 		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
