@@ -32,13 +32,13 @@ EOF
     | sed "s/FUNCTION/$3/" \
     | sed "s/LINK/$4/"
 }
-make_box bfdi "Ulrich Kelber" "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit" "https:\/\/www.bfdi.bund.de"
+#make_box bfdi "Ulrich Kelber" "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit" "https:\/\/www.bfdi.bund.de"
 
 make_box katta "Katharina Nocun" "Netzaktivistin \& Buchautorin" "https:\/\/kattascha.de"
 
 make_box rainer "Rainer Rehak" "Stellv. Vorsitzender des Forum InformatikerInnen für Frieden \& gesellschaftliche Verantwortung" "https:\/\/www.weizenbaum-institut.de\/portrait\/p\/rainer-rehak\/"
 
-make_box constanze "Constanze Kurz" "Sprecherin des Chaos Computer Clubs" "https:\/\/ccc.de"
+#make_box constanze "Constanze Kurz" "Sprecherin des Chaos Computer Clubs" "https:\/\/ccc.de"
 
 make_box ulf "Ulf Buermeyer" "Vorsitzender der Gesellschaft für Freiheitsrechte" "https:\/\/freiheitsrechte.org"
 
