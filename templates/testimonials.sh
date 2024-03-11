@@ -42,7 +42,7 @@ make_box rainer "Rainer Rehak" "Stellv. Vorsitzender des Forum InformatikerInnen
 
 make_box ulf "Ulf Buermeyer" "Vorsitzender der Gesellschaft für Freiheitsrechte" "https:\/\/freiheitsrechte.org"
 
-make_box markus "Markus Beckedahl" "Gründer re:publica \& netzpolitik.org" "https:\/\/twitter.com\/netzpolitik"
+make_box markus "Markus Beckedahl (2020)" "Gründer re:publica \& netzpolitik.org" "https:\/\/twitter.com\/netzpolitik"
 
 #make_box konstantin "Konstantin von Notz" "Bundestagsfraktion Bündnis 90 \/ Die Grünen" "https:\/\/www.von-notz.de"
 
