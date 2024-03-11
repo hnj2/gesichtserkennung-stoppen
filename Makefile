@@ -3,7 +3,8 @@
 generate: 					\
 		html/index.html		\
 		html/action.html  \
-		html/impressum.html
+		html/impressum.html \
+		html/datenschutz.html
 
 test: generate
 	@python3 -m http.server -d html -b 127.0.0.1 8888
@@ -39,6 +40,13 @@ html/impressum.html:							\
 	 	templates/header.html				\
 		templates/title-small.html			\
 		templates/impressum.html		\
+		templates/footer.html
+	($(addprefix cat , $(addsuffix ;, $^))) >$@
+
+html/datenschutz.html:							\
+	 	templates/header.html				\
+		templates/title-small.html			\
+		templates/datenschutz.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
