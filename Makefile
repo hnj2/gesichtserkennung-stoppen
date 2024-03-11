@@ -2,7 +2,8 @@
 #Neue Dateien hier hinzufügen!
 generate: 					\
 		html/index.html		\
-		html/action.html
+		html/action.html  \
+		html/impressum.html
 
 test: generate
 	@python3 -m http.server -d html -b 127.0.0.1 8888
@@ -34,6 +35,13 @@ html/aufruf.html:							\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
+html/impressum.html:							\
+	 	templates/header.html				\
+		templates/title-small.html			\
+		templates/impressum.html		\
+		templates/footer.html
+	($(addprefix cat , $(addsuffix ;, $^))) >$@
+
 html/presse.html:							\
 		templates/header.html				\
 		templates/title-small.html			\
@@ -55,6 +63,7 @@ html/pressespiegel.html:					\
 
 html/action.html: 							\
 		templates/header.html				\
+		templates/title-small.html			\
 		templates/was-kann-ich-tun.html		\
 		templates/.testimonials.html		\
 		templates/minusspace.html			\
