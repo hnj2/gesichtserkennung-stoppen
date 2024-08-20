@@ -75,15 +75,18 @@ html/pressespiegel.html:					\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
-html/action.html: 							\
-		templates/header.html				\
+html/action.html:                         \
+		templates/header.html				                   \
 		templates/title-small.html			\
-		templates/was-kann-ich-tun.html		\
+		templates/.was-kann-ich-tun.html		\
 		templates/.testimonials.html		\
 		templates/minusspace.html			\
 		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
+
+templates/.was-kann-ich-tun.html:	templates/was-kann-ich-tun.sh
+	$< >$@
 
 templates/.testimonials.html:	templates/testimonials.sh
 	templates/testimonials.sh >templates/.testimonials.html
