@@ -9,6 +9,12 @@ generate: 					\
 test: generate
 	@python3 -m http.server -d html -b 127.0.0.1 8888
 
+diff-neu:
+	@bash ./diff.sh neu
+
+upload-neu:
+	@bash ./upload.sh neu
+
 diff:
 	@bash ./diff.sh
 

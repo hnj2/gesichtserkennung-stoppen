@@ -1,6 +1,8 @@
 #/bin/bash
 
-rsync=$(rsync --dry-run --delete -rvc html/ df@df.uber.space:html)
+target="html/$1/"
+
+rsync=$(rsync --dry-run --exclude neu --delete -rvc html/ "df@df.uber.space:$target")
 
 #echo "## rsync dry run:"
 #echo "$rsync"
@@ -12,7 +14,7 @@ onlyhost=$(echo "$files" | grep -E "^deleting .+" | sed "s/deleting \(\)/\1/")
 get_diff_files() {
     ssh df@df.uber.space "
     for file in $@; do
-        if test -e html/\$file; then
+        if test -e $target\$file; then
             echo \$file
         fi
     done
@@ -41,7 +43,7 @@ printdiff() {
     
         for file in $differ; do
             echo "## diff [local]/$file [host]/$file"
-            diff html/$file <(ssh df@df.uber.space "cat html/$file")
+            diff html/$file <(ssh df@df.uber.space "cat $target$file")
             echo
         done
     fi
