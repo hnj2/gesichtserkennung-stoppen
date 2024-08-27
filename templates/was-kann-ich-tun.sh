@@ -28,7 +28,7 @@ make_box () {
   photo=$6
   credit=$7
 
-  subj="Verbieten Sie automatisierte biometrischer Fernidentifikation!"
+  subj="Verbieten Sie automatisierte biometrische Fernidentifikation!"
   text=$(echo 'SALUT,
 
 gegenwärtig erleben wir eine Welle eingriffsintensiver Vorstöße aus dem Bundesinnenministerium. So soll das BKA in Zukunft heimlich Wohnräume durchsuchen und Personen anhand von Fotos im Internet identifizieren dürfen.
