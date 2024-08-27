@@ -31,20 +31,23 @@ make_box () {
   subj="Verbieten Sie automatisierte biometrischer Fernidentifikation!"
   text=$(echo 'SALUT,
 
-nachdem der AI Act einen ersten Rahmen für die verantwortungsvolle Nutzung neuer Technologien geschaffen hat, haben Sie mit der Novellierung des BDSG die Chance, die Bewegungs-, Versammlungs- und Meinungsfreiheit der Menschen in Deutschland krisensicher zu machen.
+gegenwärtig erleben wir eine Welle eingriffsintensiver Vorstöße aus dem Bundesinnenministerium. So soll das BKA in Zukunft heimlich Wohnräume durchsuchen und Personen anhand von Fotos im Internet identifizieren dürfen.
 
-Denn wie Expert:innen in der Anhörung zur BDSG-Novelle im Bundestag am 24. Juni 2024 bestätigt haben, birgt die sog. „automatisierte biometrische Fernidentifikation“ die Gefahr, dass Menschen sich im öffentlichen Raum nicht mehr anonym bewegen können. Durch flächendeckende Gesichtserkennung und andere biometrische Verfahren kann nachvollzogen werden, wer sich wann, wo und mit wem bewegt. Das betrifft die Wege zum Supermarkt und in die Arbeit, aber auch zur Gynäkologin und nicht zuletzt auch die Teilnahme an einer Demonstration.
+Doch auch bereits bestehende Technologien wie sogenannte „biometrische Fernidentifizierungssysteme“ stellen ein erhebliches Risiko für die Grundrechte der Menschen in Deutschland dar. Die anstehende Novellierung des BDSG bietet an dieser Stelle jedoch die entscheidende Chance, den Einsatz dieser missbrauchsanfälligen Technologie im öffentlichen Raum zu verbieten und die Bewegungs-, Versammlungs- und Meinungsfreiheit der Menschen in Deutschland zu sichern.
 
-Biometrische Merkmale zur Identifizierung von Personen stehen unter besonderem Schutz im nationalen und europäischen Datenschutzrecht. Gesicht, Stimme und Iris etc. können nicht verändert werden; die Person bleibt damit grundsätzlich ihr ganzes Leben identifizierbar. Die anlasslose Erhebung und Weiterverarbeitung dieser Merkmale erhöht den Anpassungsdruck in der Gesellschaft ("chilling effects"). Gerade in demokratischen Gesellschaften ist es jedoch unerlässlich, dass die Menschen sich frei und ohne Überwachungsdruck bewegen können.
+Wie mehrere Expert:innen in der Anhörung zur BDSG-Novelle im Innenausschuss am 24. Juni 2024 bestätigt haben, bergen derartige biometrische Fernidentifizierungssysteme die Gefahr, dass Menschen sich im öffentlichen Raum nicht mehr anonym bewegen können. Durch flächendeckende Gesichtserkennung und andere biometrische Verfahren kann nachvollzogen werden, wer sich wann, wo und mit wem bewegt. Das betrifft die Wege zum Supermarkt und in die Arbeit, aber auch zur Gynäkologin und nicht zuletzt auch die Teilnahme an einer Demonstration.
 
-Wir fordern Sie daher auf: Tragen Sie nicht dazu bei, dass ein derart missbrauchsanfälliges Instrument geschaffen wird, mit dem Demokratiefeinde jetzt, oder in 10 Jahren, in NRW oder in Thüringen gegen kritische Stimmen vorgehen können. Es ist unser aller Verantwortung, undemokratischen Kräften keine Werkzeuge auf den Schreibtisch zu legen, die diese missbrauchen werden.
+Biometrische Merkmale zur Identifizierung von Personen stehen unter besonderem Schutz im nationalen und europäischen Datenschutzrecht. Gesicht, Stimme und Iris etc. können nicht verändert werden; die Person bleibt damit grundsätzlich ihr ganzes Leben identifizierbar. Die anlasslose Erhebung und Weiterverarbeitung dieser Merkmale unbeteiligter Menschen erhöht den Anpassungsdruck in der Gesellschaft ("chilling effects"). Gerade in demokratischen Gesellschaften ist es jedoch unerlässlich, dass die Menschen sich frei und ohne Überwachungsdruck bewegen können. Anonymität im öffentlichen Raum ist eine der Grundvoraussetzungen für freie Meinungsäußerung. Biometrische Fernidentifizierungssysteme jedoch gefährden diese zentrale Grundlage unserer Demokratie.
 
-An dieser Stelle können Sie einen Unterschied machen:
-Nach der Verabschiedung des AI Acts besteht nun auf nationaler Ebene und im Rahmen der BDSG-Novellierung die Chance, „biometrische Fernidentifikation“ im öffentlich Raum zu verbieten. Dies sichert die wertvolle Errungenschaft, dass die Menschen in Deutschland sich im Alltag frei und ohne Angst vor permanenter Erfassung ihres Aufenthalts bewegen können. Dies sollte weiterhin selbstverständlich sein.
+Wir fordern Sie daher auf: Tragen Sie nicht dazu bei, dass ein derart missbrauchsanfälliges Instrument geschaffen wird, mit dem Demokratiefeinde jetzt, oder in 10 Jahren – in NRW oder in Thüringen – gegen Andersdenkende vorgehen können.
 
-Wir bitten Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss dafür ein, dass das BDSG um ein (mit der KI-VO rechtlich vereinbares) Verbot automatisierter biometrischer Fernidentifikation ergänzt wird.
+An dieser Stelle können Sie als MdB und Mitglied des Innenausschusses einen Unterschied machen:
 
-Der Kampf gegen den Terrorismus ist ein absolutes legitimes Ziel. Nun geht es darum, zielgerichtete Maßnahmen zu ergreifen, bei der nicht 99,9% der Bevölkerung massive Grundrechtsverletzungen hinnehmen müssen.
+Der AI Act der Europäischen Union bietet auf nationaler Ebene und im Rahmen der BDSG-Novellierung die Chance, die Datenverarbeitung auf Grundlage biometrischer Fernidentifikationssysteme in öffentlich zugänglichen Räumen zu verbieten.
+
+Ich bitte Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss dafür ein, dass das BDSG in 2. Lesung um ein Verbot der Verarbeitung personenbezogener Daten durch Verwendung biometrischer Fernidentifizierungssysteme (Art. 3 Nr. 41 KI-VO) in öffentlich zugänglichen Räumen ergänzt wird. Dies ist mit der KI-Verordnung vereinbar. Im Rahmen der genannten Sachverständigenanhörung wurden hierzu auch konkrete Formulierungsvorschläge vorgelegt.
+
+Es ist unser aller Verantwortung, undemokratischen Kräften keine Werkzeuge auf den Schreibtisch zu legen, die diese missbrauchen können – und werden.
 
 Vielen Dank und mit freundlichen Grüßen,
 
