@@ -95,10 +95,11 @@ EOF
     | sed "s/CREDIT/$credit/"
 }
 
+make_box "Sehr geehrte Frau"  Carmen Wegge       carmen.wegge@bundestag.de          "SPD" wegge_carmen.jpg       "Susie Knoll"
 make_box "Sehr geehrter Herr" Daniel Baldy       daniel.baldy.wk@bundestag.de       "SPD" baldy_daniel.jpg       "Christian Spies"
 make_box "Sehr geehrte Frau"  Dorothee Martin    dorothee.martin@bundestag.de       "SPD" martin_dorothee.jpg    "Photothek"
 make_box "Sehr geehrte Frau"  Dunja Kreiser      dunja.kreiser.wk@bundestag.de      "SPD" kreiser_dunja.jpg      "Photothek"
-make_box "Sehr geehrte Frau"  Gülistan Yüksel    guelistan.yueksel@bundestag.de     "SPD" yueksel_guelistan.jpg "Inga Haar"
+make_box "Sehr geehrte Frau"  Gülistan Yüksel    guelistan.yueksel@bundestag.de     "SPD" yueksel_guelistan.jpg  "Inga Haar"
 make_box "Sehr geehrter Herr" Hakan Demir        hakan.demir@bundestag.de           "SPD" demir_hakan.jpg        "Max Neudert"
 make_box "Sehr geehrter Herr" Helge Lindh        helge.lindh@bundestag.de           "SPD" lindh_helge.jpg        "Photothek"
 make_box "Sehr geehrter Herr" Ingo Schäfer       ingo.schaefer@bundestag.de         "SPD" schaefer_ingo.jpg      "Daniel Koke"
