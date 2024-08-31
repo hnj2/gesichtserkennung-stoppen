@@ -105,24 +105,24 @@ make_party_box () {
   shift 6
 
   subj="Verbieten Sie automatisierte biometrische Fernidentifikation!"
-  text=$(echo 'Sehr geehrte Mitglieder*innen des Innenausschusses,
-SALUT,
+  text=$(echo 'SALUT,
+sehr geehrte MdBs der Ausschüsse Inneres und Digitales,
 
 gegenwärtig erleben wir eine Welle eingriffsintensiver Vorstöße aus dem Bundesinnenministerium. So soll das BKA in Zukunft heimlich Wohnräume durchsuchen und Personen anhand von Fotos im Internet identifizieren dürfen.
 
-Doch auch bereits bestehende Technologien wie sogenannte „biometrische Fernidentifizierungssysteme“ stellen ein erhebliches Risiko für die Grundrechte der Menschen in Deutschland dar. Die anstehende Novellierung des BDSG bietet an dieser Stelle jedoch die entscheidende Chance, den Einsatz dieser missbrauchsanfälligen Technologie im öffentlichen Raum zu verbieten und die Bewegungs-, Versammlungs- und Meinungsfreiheit der Menschen in Deutschland zu sichern.
+Doch auch bereits bestehende Technologien wie sogenannte „biometrische Fernidentifizierungssysteme“ stellen ein erhebliches Risiko für die Grundrechte der Menschen in Deutschland dar. Die anstehende Novellierung des Bundesdatenschutzgesetzes (BDSG) bietet an dieser Stelle jedoch die entscheidende Chance, den Einsatz dieser missbrauchsanfälligen Technologie im öffentlichen Raum zu verbieten und die Bewegungs-, Versammlungs- und Meinungsfreiheit der Menschen in Deutschland zu sichern.
 
 Wie mehrere Expert:innen in der Anhörung zur BDSG-Novelle im Innenausschuss am 24. Juni 2024 bestätigt haben, bergen derartige biometrische Fernidentifizierungssysteme die Gefahr, dass Menschen sich im öffentlichen Raum nicht mehr anonym bewegen können. Durch flächendeckende Gesichtserkennung und andere biometrische Verfahren kann nachvollzogen werden, wer sich wann, wo und mit wem bewegt. Das betrifft die Wege zum Supermarkt und in die Arbeit, aber auch zur Gynäkologin und nicht zuletzt auch die Teilnahme an einer Demonstration.
 
 Biometrische Merkmale zur Identifizierung von Personen stehen unter besonderem Schutz im nationalen und europäischen Datenschutzrecht. Gesicht, Stimme und Iris etc. können nicht verändert werden; die Person bleibt damit grundsätzlich ihr ganzes Leben identifizierbar. Die anlasslose Erhebung und Weiterverarbeitung dieser Merkmale unbeteiligter Menschen erhöht den Anpassungsdruck in der Gesellschaft ("chilling effects"). Gerade in demokratischen Gesellschaften ist es jedoch unerlässlich, dass die Menschen sich frei und ohne Überwachungsdruck bewegen können. Anonymität im öffentlichen Raum ist eine der Grundvoraussetzungen für freie Meinungsäußerung. Biometrische Fernidentifizierungssysteme jedoch gefährden diese zentrale Grundlage unserer Demokratie.
 
-Wir fordern Sie daher auf: Tragen Sie nicht dazu bei, dass ein derart missbrauchsanfälliges Instrument geschaffen wird, mit dem Demokratiefeinde jetzt, oder in 10 Jahren – in NRW oder in Thüringen – gegen Andersdenkende vorgehen können.
+Ich fordere Sie daher auf: Tragen Sie nicht dazu bei, dass ein derart missbrauchsanfälliges Instrument geschaffen wird, mit dem Demokratiefeinde jetzt, oder in 10 Jahren – in NRW oder in Thüringen – gegen Andersdenkende vorgehen können.
 
-An dieser Stelle können Sie als MdB und Mitglied des Innenausschusses einen Unterschied machen:
+An dieser Stelle können Sie als MdB und Mitglied des Innenausschusses oder des Auschusses für Digitales einen Unterschied machen:
 
 Der AI Act der Europäischen Union bietet auf nationaler Ebene und im Rahmen der BDSG-Novellierung die Chance, die Datenverarbeitung auf Grundlage biometrischer Fernidentifikationssysteme in öffentlich zugänglichen Räumen zu verbieten.
 
-Ich bitte Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss dafür ein, dass das BDSG in 2. Lesung um ein Verbot der Verarbeitung personenbezogener Daten durch Verwendung biometrischer Fernidentifizierungssysteme (Art. 3 Nr. 41 KI-VO) in öffentlich zugänglichen Räumen ergänzt wird. Dies ist mit der KI-Verordnung vereinbar. Im Rahmen der genannten Sachverständigenanhörung wurden hierzu auch konkrete Formulierungsvorschläge vorgelegt.
+Ich bitte Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss oder im Auschuss für Digitales dafür ein, dass das BDSG in 2. Lesung um ein Verbot der Verarbeitung personenbezogener Daten durch Verwendung biometrischer Fernidentifizierungssysteme (Art. 3 Nr. 41 KI-VO) in öffentlich zugänglichen Räumen ergänzt wird. Dies ist mit der KI-Verordnung vereinbar. Im Rahmen der genannten Sachverständigenanhörung wurden hierzu auch konkrete Formulierungsvorschläge vorgelegt.
 
 Es ist unser aller Verantwortung, undemokratischen Kräften keine Werkzeuge auf den Schreibtisch zu legen, die diese missbrauchen können – und werden.
 
@@ -163,9 +163,15 @@ EOF
     | sed "s/LOGO/$logo/"
 }
 
-make_party_box SPD SPD.png "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
-make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
-make_party_box FDP FDP.png "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
+make_party_box SPD SPD.png \
+  "Sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
+  "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
+make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg \
+  "Sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
+  "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
+make_party_box FDP FDP.png \
+  "Sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
+  "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
 
 #make_box "Sehr geehrte Frau"  Carmen Wegge       carmen.wegge@bundestag.de          "SPD" wegge_carmen.jpg       "Susie Knoll"
 #make_box "Sehr geehrter Herr" Daniel Baldy       daniel.baldy.wk@bundestag.de       "SPD" baldy_daniel.jpg       "Christian Spies"
