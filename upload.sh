@@ -4,7 +4,7 @@ target="html/$1/"
 
 echo "Comparing with live website"
 
-changes=$(rsync --delete --exclude neu -rnvc html/ df@df.uber.space:$target | head --lines=-3 | tail --lines=+2)
+changes=$(rsync --delete --exclude neu --exclude '.ht*' -rnvc html/ df@df.uber.space:$target | head --lines=-3 | tail --lines=+2)
 
 echo
 echo "The following files will be changed:"
@@ -14,6 +14,6 @@ echo
 read -p "Do you want to override the live website? (type \"Yes\"): "
 if [[ $REPLY =~ ^Yes$ ]]; then
 
-    rsync --delete --exclude neu -rvc html/ df@df.uber.space:$target
+    rsync --delete --exclude neu --exclude '.ht*' -rvc html/ df@df.uber.space:$target
 
 fi

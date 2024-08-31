@@ -2,7 +2,7 @@
 
 target="html/$1/"
 
-rsync=$(rsync --dry-run --exclude neu --delete -rvc html/ "df@df.uber.space:$target")
+rsync=$(rsync --dry-run --exclude neu --exclude '.ht*' --delete -rvc html/ "df@df.uber.space:$target")
 
 #echo "## rsync dry run:"
 #echo "$rsync"
