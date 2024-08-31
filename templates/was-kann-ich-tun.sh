@@ -159,26 +159,27 @@ EOF
 )
     echo "$box"         \
     | sed "s/LINK/$link/" \
-    | sed "s/PARTY/$party/" \
+    | sed "s&PARTY&$party&" \
     | sed "s/LOGO/$logo/"
 }
 
 make_party_box SPD SPD.png "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
-#make_party_box "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>; mitgl zwei <zwei@example.org>" SPD.png
+make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
+make_party_box FDP FDP.png "sehr geehrte Frau Vorsitzende" Carmen Wegge carmen.wegge@bundestag.de "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
 
-make_box "Sehr geehrte Frau"  Carmen Wegge       carmen.wegge@bundestag.de          "SPD" wegge_carmen.jpg       "Susie Knoll"
-make_box "Sehr geehrter Herr" Daniel Baldy       daniel.baldy.wk@bundestag.de       "SPD" baldy_daniel.jpg       "Christian Spies"
-make_box "Sehr geehrte Frau"  Dorothee Martin    dorothee.martin@bundestag.de       "SPD" martin_dorothee.jpg    "Photothek"
-make_box "Sehr geehrte Frau"  Dunja Kreiser      dunja.kreiser.wk@bundestag.de      "SPD" kreiser_dunja.jpg      "Photothek"
-make_box "Sehr geehrte Frau"  Gülistan Yüksel    guelistan.yueksel@bundestag.de     "SPD" yueksel_guelistan.jpg  "Inga Haar"
-make_box "Sehr geehrter Herr" Hakan Demir        hakan.demir@bundestag.de           "SPD" demir_hakan.jpg        "Max Neudert"
-make_box "Sehr geehrter Herr" Helge Lindh        helge.lindh@bundestag.de           "SPD" lindh_helge.jpg        "Photothek"
-make_box "Sehr geehrter Herr" Ingo Schäfer       ingo.schaefer@bundestag.de         "SPD" schaefer_ingo.jpg      "Daniel Koke"
-make_box "Sehr geehrte Frau"  Peggy Schierenbeck peggy.schierenbeck.wk@bundestag.de "SPD" schierenbeck_peggy.jpg "Katja Thiele"
-make_box "Sehr geehrter Herr" Sebastian Fiedler  sebastian.fiedler.wk@bundestag.de  "SPD" fiedler_sebastian.jpg  "Photothek"
-make_box "Sehr geehrte Frau"  Simona Koß         simona.koss@bundestag.de           "SPD" koss_simona.jpg        "Photothek"
-make_box "Sehr geehrter Herr" Lars Castellucci   lars.castellucci@bundestag.de      "SPD" castellucci_lars.jpg   "Stella von Saldern"
-make_box "Sehr geehrter Herr" Sebastian Hartmann sebastian.hartmann@bundestag.de    "SPD" hartmann_sebastian.jpg "Sebastian Hartmann"
+#make_box "Sehr geehrte Frau"  Carmen Wegge       carmen.wegge@bundestag.de          "SPD" wegge_carmen.jpg       "Susie Knoll"
+#make_box "Sehr geehrter Herr" Daniel Baldy       daniel.baldy.wk@bundestag.de       "SPD" baldy_daniel.jpg       "Christian Spies"
+#make_box "Sehr geehrte Frau"  Dorothee Martin    dorothee.martin@bundestag.de       "SPD" martin_dorothee.jpg    "Photothek"
+#make_box "Sehr geehrte Frau"  Dunja Kreiser      dunja.kreiser.wk@bundestag.de      "SPD" kreiser_dunja.jpg      "Photothek"
+#make_box "Sehr geehrte Frau"  Gülistan Yüksel    guelistan.yueksel@bundestag.de     "SPD" yueksel_guelistan.jpg  "Inga Haar"
+#make_box "Sehr geehrter Herr" Hakan Demir        hakan.demir@bundestag.de           "SPD" demir_hakan.jpg        "Max Neudert"
+#make_box "Sehr geehrter Herr" Helge Lindh        helge.lindh@bundestag.de           "SPD" lindh_helge.jpg        "Photothek"
+#make_box "Sehr geehrter Herr" Ingo Schäfer       ingo.schaefer@bundestag.de         "SPD" schaefer_ingo.jpg      "Daniel Koke"
+#make_box "Sehr geehrte Frau"  Peggy Schierenbeck peggy.schierenbeck.wk@bundestag.de "SPD" schierenbeck_peggy.jpg "Katja Thiele"
+#make_box "Sehr geehrter Herr" Sebastian Fiedler  sebastian.fiedler.wk@bundestag.de  "SPD" fiedler_sebastian.jpg  "Photothek"
+#make_box "Sehr geehrte Frau"  Simona Koß         simona.koss@bundestag.de           "SPD" koss_simona.jpg        "Photothek"
+#make_box "Sehr geehrter Herr" Lars Castellucci   lars.castellucci@bundestag.de      "SPD" castellucci_lars.jpg   "Stella von Saldern"
+#make_box "Sehr geehrter Herr" Sebastian Hartmann sebastian.hartmann@bundestag.de    "SPD" hartmann_sebastian.jpg "Sebastian Hartmann"
   
 cat <<EOF
       </div>
