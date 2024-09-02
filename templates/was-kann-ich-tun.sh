@@ -105,8 +105,8 @@ make_party_box () {
   shift 6
 
   subj="Verbieten Sie automatisierte biometrische Fernidentifikation!"
-  text=$(echo 'SALUT,
-sehr geehrte MdBs der Ausschüsse Inneres und Digitales,
+  text=$(echo 'Sehr geehrte MdBs der Ausschüsse Inneres und Digitales,
+SALUT,
 
 gegenwärtig erleben wir eine Welle eingriffsintensiver Vorstöße aus dem Bundesinnenministerium. So soll das BKA in Zukunft heimlich Wohnräume durchsuchen und Personen anhand von Fotos im Internet identifizieren dürfen.
 
@@ -164,13 +164,13 @@ EOF
 }
 
 make_party_box SPD SPD.png \
-  "Sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
+  "sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
   "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
 make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg \
-  "Sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
+  "sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
   "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
 make_party_box FDP FDP.png \
-  "Sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
+  "sehr geehrte Berichterstatterin Frau" Anne Anonym anne.anonym@bundtag.de \
   "mitgl eins <eins@example.org>" "mgl zwei <zwei@example.org" "asdf qwer <asdf.wqer@example.org>"
 
 #make_box "Sehr geehrte Frau"  Carmen Wegge       carmen.wegge@bundestag.de          "SPD" wegge_carmen.jpg       "Susie Knoll"
