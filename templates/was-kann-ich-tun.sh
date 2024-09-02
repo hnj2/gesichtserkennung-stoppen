@@ -118,11 +118,11 @@ Biometrische Merkmale zur Identifizierung von Personen stehen unter besonderem S
 
 Ich fordere Sie daher auf: Tragen Sie nicht dazu bei, dass ein derart missbrauchsanfälliges Instrument geschaffen wird, mit dem Demokratiefeinde jetzt, oder in 10 Jahren – in NRW oder in Thüringen – gegen Andersdenkende vorgehen können.
 
-An dieser Stelle können Sie als MdB und Mitglied des Innenausschusses oder des Auschusses für Digitales einen Unterschied machen:
+An dieser Stelle können Sie als MdB und Mitglied des Innenausschusses oder des Ausschusses für Digitales einen Unterschied machen:
 
 Der AI Act der Europäischen Union bietet auf nationaler Ebene und im Rahmen der BDSG-Novellierung die Chance, die Datenverarbeitung auf Grundlage biometrischer Fernidentifikationssysteme in öffentlich zugänglichen Räumen zu verbieten.
 
-Ich bitte Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss oder im Auschuss für Digitales dafür ein, dass das BDSG in 2. Lesung um ein Verbot der Verarbeitung personenbezogener Daten durch Verwendung biometrischer Fernidentifizierungssysteme (Art. 3 Nr. 41 KI-VO) in öffentlich zugänglichen Räumen ergänzt wird. Dies ist mit der KI-Verordnung vereinbar. Im Rahmen der genannten Sachverständigenanhörung wurden hierzu auch konkrete Formulierungsvorschläge vorgelegt.
+Ich bitte Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss oder im Ausschuss für Digitales dafür ein, dass das BDSG in 2. Lesung um ein Verbot der Verarbeitung personenbezogener Daten durch Verwendung biometrischer Fernidentifizierungssysteme (Art. 3 Nr. 41 KI-VO) in öffentlich zugänglichen Räumen ergänzt wird. Dies ist mit der KI-Verordnung vereinbar. Im Rahmen der genannten Sachverständigenanhörung wurden hierzu auch konkrete Formulierungsvorschläge vorgelegt.
 
 Es ist unser aller Verantwortung, undemokratischen Kräften keine Werkzeuge auf den Schreibtisch zu legen, die diese missbrauchen können – und werden.
 
@@ -177,18 +177,6 @@ make_party_box SPD SPD.png \
   "Ingo Schäfer <ingo.schaefer@bundestag.de>" \
   "Peggy Schierenbeck <peggy.schierenbeck@bundestag.de>" \
   "Gülistan Yüksel <guelistan.yueksel@bundestag.de>" \
-  "Sonja Katharina Eichwede <sonja.eichwede@bundestag.de>" \
-  "Dr. jur. Johannes Fechner <johannes.fechner@bundestag.de>" \
-  "Martin Gerster <martin.gerster@bundestag.de>" \
-  "Dr. Kristian Klinck <kristian.klinck@bundestag.de>" \
-  "Luiza Licina-Bode <luiza.licina-bode@bundestag.de>" \
-  "Susanne Mittag <susanne.mittag@bundestag.de>" \
-  "Rasha Nasr <rasha.nasr@bundestag.de>" \
-  "Natalie Pawlik <natalie.pawlik@bundestag.de>" \
-  "Rebecca Schamber <rebecca.schamber@bundestag.de>" \
-  "Dr. Ralf Stegner <ralf.stegner@bundestag.de>" \
-  "Dirk Vöpel <dirk.voepel@bundestag.de>" \
-  "Maja Scarlett Wallstein <maja.wallstein@bundestag.de>" \
   "Dirk Wiese <dirk.wiese@bundestag.de>" \
   "Dr. Holger Becker <holger.becker@bundestag.de>" \
   "Anna Kassautzki <anna.kassautzki@bundestag.de>" \
@@ -201,15 +189,7 @@ make_party_box SPD SPD.png \
   "Dr. Jens Zimmermann <jens.zimmermann@bundestag.de>" \
   "Armand Zorn <armand.zorn@bundestag.de>" \
   "Saskia Esken <saskia.esken@bundestag.de>" \
-  "Metin Hakverdi <metin.hakverdi@bundestag.de>" \
-  "Kevin Leiser <kevin.leiser@bundestag.de>" \
-  "Detlef Müller <detlef.mueller@bundestag.de>" \
-  "Josephine Ortleb <josephine.ortleb@bundestag.de>" \
-  "Mathias Papendieck <mathias.papendieck@bundestag.de>" \
-  "Daniel Schneider <daniel.schneider@bundestag.de>" \
-  "Lena Werner <lena.werner@bundestag.de>" \
-  "Alexander Bartz <alexander.bartz@bundestag.de>" \
-  "Martin Diedenhofen <martin.diedenhofen@bundestag.de>"
+  "Metin Hakverdi <metin.hakverdi@bundestag.de>"
 
 make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg \
   "sehr geehrte Berichterstatterin Frau" Misbah Khan misbah.khan@bundestag.de \
@@ -220,23 +200,13 @@ make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg \
   "Sabine Grützmacher <sabine.gruetzmacher@bundestag.de>" \
   "Maria Klein-Schmeink <maria.klein-schmeink@bundestag.de>" \
   "Dr. Konstantin von Notz <Konstantin.notz@bundestag.de>" \
-  "Stefan Gelbhaar <stefan.gelbhaar@bundestag.de>" \
-  "Hanna Steinmüller <hanna.steinmueller@bundestag.de>" \
-  "Karl Bär <karl.baer@bundestag.de>" \
   "Marcel Emmerich <marcel.emmerich@bundestag.de>" \
   "Lamya Kaddor <lamya.kaddor@bundestag.de>" \
   "Leon Eckert <leon.eckert@bundestag.de>" \
   "Katrin Göring-Eckardt <katrin.goering-eckardt@bundestag.de>" \
-  "Misbah Khan <misbah.khan@bundestag.de>" \
   "Dr. Konstantin Notz <konstantin.notz@bundestag.de>" \
   "Julian Pahlke <julian.pahlke@bundestag.de>" \
-  "Marlene Schönberger <marlene.schoenberger@bundestag.de>" \
-  "Canan Bayram <canan.bayram@bundestag.de>" \
-  "Lukas Benner <lukas.benner@bundestag.de>" \
-  "Schahina Gambir <schahina.gambir@bundestag.de>" \
-  "Dr. Irene Mihalic <irene.mihalic@bundestag.de>" \
-  "Filiz Polat <filiz.polat@bundestag.de>" \
-  "Dr. Manuela Rottmann <manuela.rottmann@bundestag.de>"
+  "Marlene Schönberger <marlene.schoenberger@bundestag.de>"
 
 make_party_box FDP FDP.png \
   "sehr geehrter Berichterstatter Herr" Manuel Höferlin manuel.hoeferlin@bundestag.de \
@@ -245,20 +215,10 @@ make_party_box FDP FDP.png \
   "Dr. Volker Redder <volker.redder@bundestag.de>" \
   "Linda Teuteberg <linda.teuteberg@bundestag.de>" \
   "Stephan Thomae <stephan.thomae@bundestag.de>" \
-  "Muhanad Al-Halak <muhanad.al-halak@bundestag.de>" \
-  "Jens Beeck <jens.beeck@bundestag.de>" \
-  "Fabian Griewel <fabian.griewel@bundestag.de>" \
-  "Philipp Hartewig <philipp.hartewig@bundestag.de>" \
-  "Wolfgang Kubicki <wolfgang.kubicki@bundestag.de>" \
-  "Konstantin Kuhle <konstantin.kuhle@bundestag.de>" \
   "Maximilian Funke-Kaiser <maximilian.funke-kaiser@bundestag.de>" \
   "Maximilian Mordhorst <maximilian.mordhorst@bundestag.de>" \
   "Dr. Volker Redder <volker.redder@bundestag.de>" \
-  "Frank Schäffler <frank.schaeffler@bundestag.de>" \
-  "Daniel Föst <daniel.foest@bundestag.de>" \
-  "Manuel Höferlin <manuel.hoeferlin@bundestag.de>" \
-  "Carina Konrad <carina.konrad@bundestag.de>" \
-  "Michael Kruse <michael.kruse@bundestag.de>"
+  "Frank Schäffler <frank.schaeffler@bundestag.de>"
 
 #make_box "Sehr geehrte Frau"  Carmen Wegge       carmen.wegge@bundestag.de          "SPD" wegge_carmen.jpg       "Susie Knoll"
 #make_box "Sehr geehrter Herr" Daniel Baldy       daniel.baldy.wk@bundestag.de       "SPD" baldy_daniel.jpg       "Christian Spies"
