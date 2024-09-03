@@ -51,6 +51,7 @@ make_box hu.jpg "Humanistische Union e.V." "https:\/\/www.humanistische-union.de
 make_box topio.jpg "Topio \/\/\/ public space for privacy" "https:\/\/www.topio.info"
 #make_box gw.png "Germanwatch" "https:\/\/germanwatch.org"
 #make_box gi.svg "Gesellschaft für Informatik" "https:\/\/gi.de"
+make_box wikimedia.png "Wikimedia Deutschland" "https:\/\/www.wikimedia.de"
 
 
 
