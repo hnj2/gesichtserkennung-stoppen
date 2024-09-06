@@ -15,19 +15,20 @@ cat <<EOF
         </p>
       </div>
 
-      <div id="abgeordnete" class="columns is-multiline">
+      <div id="parties" class="columns is-multiline">
 EOF
 
 alias urlencode='python3 -c "import sys, urllib.parse as ul; print(ul.quote(sys.argv[1]))"'
 
 make_party_box () {
-  party=$1
-  logo=$2
-  vor_salut=$3
-  vor_first=$4
-  vor_last=$5
-  vor_addr=$6
-  shift 6
+  party_short=$1
+  party=$2
+  logo=$3
+  vor_salut=$4
+  vor_first=$5
+  vor_last=$6
+  vor_addr=$7
+  shift 7
 
   subj="Verbieten Sie automatisierte biometrische Fernidentifikation!"
   text=$(echo 'Sehr geehrte MdBs der Ausschüsse Inneres und Digitales,
@@ -59,36 +60,49 @@ ihr*e Bürger*in' | sed "s/SALUT/$vor_salut $vor_first $vor_last/")
   subj_enc=$(urlencode "$subj")
   body_enc=$(urlencode "$text")
   cc_enc=""
+  all_addrs="$vor_first $vor_last <$vor_addr>"
   for mgl in "$@"; do
     mgl_enc=$(urlencode "$mgl")
     cc_enc="${cc_enc}cc=${mgl_enc}\&"
+    all_addrs="${all_addrs}; $mgl"
   done
   link="mailto:$addr_enc?subject=$subj_enc\&${cc_enc}body=$body_enc"
 
-  box=$(cat <<EOF
+  cat <<EOF
         <div class="column is-one-third">
           <article class="card">
             <div class="card-image">
-              <a href="LINK" target="_blank">
-                <img src="img/logo/LOGO">
+              <a href="$link" target="_blank">
+                <img src="img/logo/$logo">
               </a>
             </div>
             <div class="card-content">
-              <a href="LINK">
-                <p class="title">PARTY</p>
+              <a href="$link">
+                <p class="title">$party</p>
               </a>
             </div>
           </article>
+          <script type="text/javascript">
+            function copy_${party_short}_mailtext() {
+              navigator.clipboard.writeText(\`$text\`);
+              var button = document.getElementById("${party_short}_mailtext");
+              if (button) {
+                button.classList.add("is-light");
+              }
+            }
+            function copy_${party_short}_addresses() {
+              navigator.clipboard.writeText("$all_addrs");
+              var button = document.getElementById("${party_short}_addresses");
+              if (button) {
+                button.classList.add("is-light");
+              }
+            }
+          </script>
         </div>
 EOF
-)
-    echo "$box"         \
-    | sed "s/LINK/$link/" \
-    | sed "s&PARTY&$party&" \
-    | sed "s/LOGO/$logo/"
 }
 
-make_party_box SPD SPD.png \
+make_party_box spd SPD SPD.png \
   "sehr geehrte Berichterstatterin Frau" Carmen Wegge carmen.wegge@bundestag.de \
   "Sebastian Hartmann <sebastian.hartmann@bundestag.de>" \
   "Prof. Dr. Lars Castellucci <lars.castellucci@bundestag.de>" \
@@ -116,7 +130,7 @@ make_party_box SPD SPD.png \
   "Saskia Esken <saskia.esken@bundestag.de>" \
   "Metin Hakverdi <metin.hakverdi@bundestag.de>"
 
-make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg \
+make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg \
   "sehr geehrte Berichterstatterin Frau" Misbah Khan misbah.khan@bundestag.de \
   "Maik Außendorf <maik.aussendorf@bundestag.de>" \
   "Tobias Bacherle <tobias.bacherle@bundestag.de>" \
@@ -133,7 +147,7 @@ make_party_box "Bündnis 90/Die Grünen" B90Gruene.jpg \
   "Julian Pahlke <julian.pahlke@bundestag.de>" \
   "Marlene Schönberger <marlene.schoenberger@bundestag.de>"
 
-make_party_box FDP FDP.png \
+make_party_box fdp FDP FDP.png \
   "sehr geehrter Berichterstatter Herr" Manuel Höferlin manuel.hoeferlin@bundestag.de \
   "Sandra Bubendorfer-Licht <sandra.bubendorfer-licht@bundestag.de>" \
   "Dr. Ann-Veruschka Jurisch <ann-veruschka.jurisch@bundestag.de>" \
@@ -148,11 +162,113 @@ make_party_box FDP FDP.png \
 cat <<EOF
       </div>
 
+
+      <div class="content is-size-5">
+        </br>
+        <h3 class="title is-4">
+          Probleme?
+        </h3>
+        <p>
+          Falls du kein E-Mail Program hast das die links oben unterstützt, oder nicht die Adressen aller Abgeordneten angezeigt werden, kannst du hier den Mailtext und die Adressen mit zwei Klicks in deine E-Mail kopieren:
+        </p>
+      </div>
+
+      <div id="backup" class="columns is-multiline">
+        <div class="column is-one-third">
+          <article class="card">
+            <div class="card-content">
+              <p class="title">SPD</p>
+              <div class="buttons">
+                <button id="spd_addresses" class="button is-medium is-fullwidth is-danger" onclick="copy_spd_addresses()">Kopiere Adressen</button>
+                <button id="spd_mailtext" class="button is-medium is-fullwidth is-danger" onclick="copy_spd_mailtext()">Kopiere Mailtext</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column is-one-third">
+          <article class="card">
+            <div class="card-content">
+              <p class="title">Bündnis 90/Die Grünen</p>
+              <div class="buttons">
+                <button id="gruene_addresses" class="button is-medium is-fullwidth is-success" onclick="copy_gruene_addresses()">Kopiere Adressen</button>
+                <button id="gruene_mailtext" class="button is-medium is-fullwidth is-success" onclick="copy_gruene_mailtext()">Kopiere Mailtext</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column is-one-third">
+          <article class="card">
+            <div class="card-content">
+              <p class="title">FDP</p>
+              <div class="buttons">
+                <button id="fdp_addresses" class="button is-medium is-fullwidth is-warning" onclick="copy_fdp_addresses()">Kopiere Adressen</button>
+                <button id="fdp_mailtext" class="button is-medium is-fullwidth is-warning" onclick="copy_fdp_mailtext()">Kopiere Mailtext</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="content is-size-5">
+        </br>
+        <p>
+          Unsere vorformulierte E-Mail ist adressiert an die/den jeweilige:n Berichterstatter:in mit allen Ausschussmitgliedern und lautet:
+        </p>
+        <h4 class="title is-5">
+          Betreff: Verbieten Sie automatisierte biometrische Fernidentifikation!
+        </h4>
+        <p>
+          Sehr geehrte MdBs der Ausschüsse Inneres und Digitales,
+          </br>
+          sehr geehrte(r) Berichterstatter(in) Herr/Frau So Und So,
+        </p>
+        </br>
+        <p>
+          gegenwärtig erleben wir eine Welle eingriffsintensiver Vorstöße aus dem Bundesinnenministerium. So soll das BKA in Zukunft heimlich Wohnräume durchsuchen und Personen anhand von Fotos im Internet identifizieren dürfen.
+        </p>
+        <p>
+          Doch auch bereits bestehende Technologien wie sogenannte „biometrische Fernidentifizierungssysteme“ stellen ein erhebliches Risiko für die Grundrechte der Menschen in Deutschland dar. Die anstehende Novellierung des Bundesdatenschutzgesetzes (BDSG) bietet an dieser Stelle jedoch die entscheidende Chance, den Einsatz dieser missbrauchsanfälligen Technologie im öffentlichen Raum zu verbieten und die Bewegungs-, Versammlungs- und Meinungsfreiheit der Menschen in Deutschland zu sichern.
+        </p>
+        <p>
+          Wie mehrere Expert:innen in der Anhörung zur BDSG-Novelle im Innenausschuss am 24. Juni 2024 bestätigt haben, bergen derartige biometrische Fernidentifizierungssysteme die Gefahr, dass Menschen sich im öffentlichen Raum nicht mehr anonym bewegen können. Durch flächendeckende Gesichtserkennung und andere biometrische Verfahren kann nachvollzogen werden, wer sich wann, wo und mit wem bewegt. Das betrifft die Wege zum Supermarkt und in die Arbeit, aber auch zur Gynäkologin und nicht zuletzt auch die Teilnahme an einer Demonstration.
+        </p>
+        <p>
+          Biometrische Merkmale zur Identifizierung von Personen stehen unter besonderem Schutz im nationalen und europäischen Datenschutzrecht. Gesicht, Stimme und Iris etc. können nicht verändert werden; die Person bleibt damit grundsätzlich ihr ganzes Leben identifizierbar. Die anlasslose Erhebung und Weiterverarbeitung dieser Merkmale unbeteiligter Menschen erhöht den Anpassungsdruck in der Gesellschaft ("chilling effects"). Gerade in demokratischen Gesellschaften ist es jedoch unerlässlich, dass die Menschen sich frei und ohne Überwachungsdruck bewegen können. Anonymität im öffentlichen Raum ist eine der Grundvoraussetzungen für freie Meinungsäußerung. Biometrische Fernidentifizierungssysteme jedoch gefährden diese zentrale Grundlage unserer Demokratie.
+        </p>
+        <p>
+          Ich fordere Sie daher auf: Tragen Sie nicht dazu bei, dass ein derart missbrauchsanfälliges Instrument geschaffen wird, mit dem Demokratiefeinde jetzt, oder in 10 Jahren – in NRW oder in Thüringen – gegen Andersdenkende vorgehen können.
+        </p>
+        <p>
+          An dieser Stelle können Sie als MdB und Mitglied des Innenausschusses oder des Ausschusses für Digitales einen Unterschied machen:
+        </p>
+        <p>
+          Der AI Act der Europäischen Union bietet auf nationaler Ebene und im Rahmen der BDSG-Novellierung die Chance, die Datenverarbeitung auf Grundlage biometrischer Fernidentifikationssysteme in öffentlich zugänglichen Räumen zu verbieten.
+        </p>
+        <p>
+          Ich bitte Sie daher um Folgendes: Setzen Sie sich innerhalb Ihrer Fraktion und im Innenausschuss oder im Ausschuss für Digitales dafür ein, dass das BDSG in 2. Lesung um ein Verbot der Verarbeitung personenbezogener Daten durch Verwendung biometrischer Fernidentifizierungssysteme (Art. 3 Nr. 41 KI-VO) in öffentlich zugänglichen Räumen ergänzt wird. Dies ist mit der KI-Verordnung vereinbar. Im Rahmen der genannten Sachverständigenanhörung wurden hierzu auch konkrete Formulierungsvorschläge vorgelegt.
+        </p>
+        <p>
+          Es ist unser aller Verantwortung, undemokratischen Kräften keine Werkzeuge auf den Schreibtisch zu legen, die diese missbrauchen können – und werden.
+        </p>
+        </br>
+        <p>
+          Vielen Dank und mit freundlichen Grüßen,
+
+          </br>
+          ihr*e Bürger*in
+        </p>
+      </div>
+
       <script type="text/javascript">
-        var abg = document.getElementById('abgeordnete');
-        if (abg) {
-          for (var i = abg.children.length; i >= 0; i--) {
-            abg.appendChild(abg.children[Math.random() * i | 0]);
+        var parties = document.getElementById('parties');
+        var backup = document.getElementById('backup');
+        for (var i = parties.children.length; i >= 0; i--) {
+          var x = Math.random() * i;
+          if (parties) {
+            parties.appendChild(parties.children[x | 0]);
+          }
+          if (backup) {
+            backup.appendChild(backup.children[x | 0]);
           }
         }
       </script>
