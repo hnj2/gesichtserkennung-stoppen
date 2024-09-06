@@ -166,10 +166,10 @@ cat <<EOF
       <div class="content is-size-5">
         </br>
         <h3 class="title is-4">
-          Probleme?
+          Anders Mitmachen
         </h3>
         <p>
-          Falls du kein E-Mail Program hast das die links oben unterstützt, oder nicht die Adressen aller Abgeordneten angezeigt werden, kannst du hier den Mailtext und die Adressen mit zwei Klicks in deine E-Mail kopieren:
+          Falls du kein E-Mail Program hast das die Links oben unterstützt, oder nicht die Adressen aller Abgeordneten angezeigt werden, kannst du hier den Mailtext und die Adressen mit zwei Klicks in deine E-Mail kopieren:
         </p>
       </div>
 
