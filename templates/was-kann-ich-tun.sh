@@ -64,7 +64,7 @@ ihr*e Bürger*in' | sed "s/SALUT/$vor_salut $vor_first $vor_last/")
   for mgl in "$@"; do
     mgl_enc=$(urlencode "$mgl")
     cc_enc="${cc_enc}cc=${mgl_enc}\&"
-    all_addrs="${all_addrs}; $mgl"
+    all_addrs="${all_addrs}, $mgl"
   done
   link="mailto:$addr_enc?subject=$subj_enc\&${cc_enc}body=$body_enc"
 
