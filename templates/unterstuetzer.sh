@@ -52,6 +52,7 @@ make_box topio.jpg "Topio \/\/\/ public space for privacy" "https:\/\/www.topio.
 #make_box gw.png "Germanwatch" "https:\/\/germanwatch.org"
 #make_box gi.svg "Gesellschaft für Informatik" "https:\/\/gi.de"
 make_box wikimedia.png "Wikimedia Deutschland" "https:\/\/www.wikimedia.de"
+make_box netzbegruenung.png "Netzbegrünung e.V." "https:\/\/netzbegruenung.de"
 
 
 
