@@ -24,11 +24,24 @@ make_party_box () {
   party_short=$1
   party=$2
   logo=$3
-  vor_salut=$4
-  vor_first=$5
-  vor_last=$6
-  vor_addr=$7
-  shift 7
+  salut_count=$4
+  shift 4
+  vor_salut=$1
+  vor_first=$2
+  vor_last=$3
+  vor_addr=$4
+  shift 4
+  to="$vor_first $vor_last <$vor_addr>"
+  salut="$vor_salut $vor_first $vor_last"
+  for i in $(seq 2 $salut_count); do
+    vor_salut=$1
+    vor_first=$2
+    vor_last=$3
+    vor_addr=$4
+    shift 4
+    to="$to, $vor_first $vor_last <$vor_addr>"
+    salut="$salut,\n$vor_salut $vor_first $vor_last"
+  done
 
   subj="Verbieten Sie automatisierte biometrische Fernidentifikation!"
   text=$(echo 'Sehr geehrte MdBs der Ausschüsse Inneres und Digitales,
@@ -56,19 +69,19 @@ Es ist unser aller Verantwortung, undemokratischen Kräften keine Werkzeuge auf 
 
 Vielen Dank und mit freundlichen Grüßen,
 
-ihr*e Bürger*in' | sed "s/SALUT/$vor_salut $vor_first $vor_last/")
+ihr*e Bürger*in' | sed "s/SALUT/$salut/")
 
-  addr_enc=$(urlencode "$vor_first $vor_last <$vor_addr>")
+  addr_enc=$(urlencode "$to")
   subj_enc=$(urlencode "$subj")
   body_enc=$(urlencode "$text")
   cc_enc=""
-  all_addrs="$vor_first $vor_last <$vor_addr>"
+  all_addrs="$to"
   for mgl in "$@"; do
     mgl_enc=$(urlencode "$mgl")
-    cc_enc="${cc_enc}cc=${mgl_enc}\&"
+    cc_enc="${cc_enc}cc=${mgl_enc}&"
     all_addrs="${all_addrs}, $mgl"
   done
-  link="mailto:$addr_enc?subject=$subj_enc\&${cc_enc}body=$body_enc"
+  link="mailto:$addr_enc?subject=$subj_enc&${cc_enc}body=$body_enc"
 
   cat <<EOF
         <div class="column is-one-third">
@@ -104,8 +117,11 @@ ihr*e Bürger*in' | sed "s/SALUT/$vor_salut $vor_first $vor_last/")
 EOF
 }
 
-make_party_box spd SPD SPD.png \
+make_party_box spd SPD SPD.png 4 \
   "sehr geehrte Berichterstatterin Frau" Carmen Wegge carmen.wegge@bundestag.de \
+  "sehr geehrter Fraktionsvorsitzender Herr" "Dr. Rolf" Mützenich rolf.muetzenich@bundestag.de \
+  "sehr geehrte Parlamentarische Geschäftsführerin Frau" Katja Mast katja.mast@bundestag.de \
+  "sehr geehrter Parlamentarische Geschäftsführer Herr" "Dr. Johannes" Fechner johannes.fechner@bundestag.de \
   "Sebastian Hartmann <sebastian.hartmann@bundestag.de>" \
   "Prof. Dr. Lars Castellucci <lars.castellucci@bundestag.de>" \
   "Daniel Baldy <daniel.baldy@bundestag.de>" \
@@ -132,8 +148,11 @@ make_party_box spd SPD SPD.png \
   "Saskia Esken <saskia.esken@bundestag.de>" \
   "Metin Hakverdi <metin.hakverdi@bundestag.de>"
 
-make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg \
+make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg 4 \
   "sehr geehrte Berichterstatterin Frau" Misbah Khan misbah.khan@bundestag.de \
+  "sehr geehrte Fraktionsvorsitzende Frau" Katharina Dröge katharina.droege@bundestag.de \
+  "sehr geehrte Fraktionsvorsitzende Frau" Britta Haßelmann britta.hasselmann@bundestag.de \
+  "sehr geehrte Parlamentarische Geschäftsführerin Frau" "Dr. Irene" "Mihalic" irene.mihalic@bundestag.de \
   "Maik Außendorf <maik.aussendorf@bundestag.de>" \
   "Tobias Bacherle <tobias.bacherle@bundestag.de>" \
   "Tabea Rößner <tabea.roessner@bundestag.de>" \
@@ -149,8 +168,10 @@ make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg \
   "Julian Pahlke <julian.pahlke@bundestag.de>" \
   "Marlene Schönberger <marlene.schoenberger@bundestag.de>"
 
-make_party_box fdp FDP FDP.png \
+make_party_box fdp FDP FDP.png 3 \
   "sehr geehrter Berichterstatter Herr" Manuel Höferlin manuel.hoeferlin@bundestag.de \
+  "sehr geehrter Fraktionsvorsitzender Herr" Christian Dürr christian.duerr@bundestag.de \
+  "sehr geehrter Parlamentarische Geschäftsführer Herr" Johannes Vogel johannes.vogel@bundestag.de\
   "Sandra Bubendorfer-Licht <sandra.bubendorfer-licht@bundestag.de>" \
   "Dr. Ann-Veruschka Jurisch <ann-veruschka.jurisch@bundestag.de>" \
   "Dr. Volker Redder <volker.redder@bundestag.de>" \
