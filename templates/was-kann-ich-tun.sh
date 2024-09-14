@@ -164,7 +164,6 @@ make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg 4 \
   "Lamya Kaddor <lamya.kaddor@bundestag.de>" \
   "Leon Eckert <leon.eckert@bundestag.de>" \
   "Katrin Göring-Eckardt <katrin.goering-eckardt@bundestag.de>" \
-  "Dr. Konstantin Notz <konstantin.notz@bundestag.de>" \
   "Julian Pahlke <julian.pahlke@bundestag.de>" \
   "Marlene Schönberger <marlene.schoenberger@bundestag.de>"
 
@@ -179,7 +178,6 @@ make_party_box fdp FDP FDP.png 3 \
   "Stephan Thomae <stephan.thomae@bundestag.de>" \
   "Maximilian Funke-Kaiser <maximilian.funke-kaiser@bundestag.de>" \
   "Maximilian Mordhorst <maximilian.mordhorst@bundestag.de>" \
-  "Dr. Volker Redder <volker.redder@bundestag.de>" \
   "Frank Schäffler <frank.schaeffler@bundestag.de>"
 
 cat <<EOF
