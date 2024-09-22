@@ -3,6 +3,7 @@
 generate: 					\
 		html/index.html		\
 		html/action.html  \
+		html/brief.html \
 		html/impressum.html \
 		html/datenschutz.html
 
@@ -56,6 +57,13 @@ html/datenschutz.html:							\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
 
+html/brief.html:							\
+		templates/header.html				\
+		templates/title-small.html			\
+		templates/brief.html		\
+		templates/footer.html
+	($(addprefix cat , $(addsuffix ;, $^))) >$@
+
 html/presse.html:							\
 		templates/header.html				\
 		templates/title-small.html			\
@@ -63,6 +71,7 @@ html/presse.html:							\
 		templates/.unterstuetzer.html		\
 		templates/footer.html
 	($(addprefix cat , $(addsuffix ;, $^))) >$@
+
 html/pm.html: html/presse.html
 	cp html/presse.html html/pm.html
 
