@@ -149,7 +149,7 @@ make_party_box spd SPD SPD.png 4 \
   "Metin Hakverdi <metin.hakverdi@bundestag.de>"
 
 make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg 4 \
-  "sehr geehrte Berichterstatterin Frau" Misbah Khan misbah.khan@bundestag.de \
+  "sehr geehrter Berichterstatter Herr" Marcel Emmerich marcel.emmerich@bundestag.de \
   "sehr geehrte Fraktionsvorsitzende Frau" Katharina Dröge katharina.droege@bundestag.de \
   "sehr geehrte Fraktionsvorsitzende Frau" Britta Haßelmann britta.hasselmann@bundestag.de \
   "sehr geehrte Parlamentarische Geschäftsführerin Frau" "Dr. Irene" "Mihalic" irene.mihalic@bundestag.de \
@@ -160,10 +160,10 @@ make_party_box gruene "Bündnis 90/Die Grünen" B90Gruene.jpg 4 \
   "Sabine Grützmacher <sabine.gruetzmacher@bundestag.de>" \
   "Maria Klein-Schmeink <maria.klein-schmeink@bundestag.de>" \
   "Dr. Konstantin von Notz <Konstantin.notz@bundestag.de>" \
-  "Marcel Emmerich <marcel.emmerich@bundestag.de>" \
   "Lamya Kaddor <lamya.kaddor@bundestag.de>" \
   "Leon Eckert <leon.eckert@bundestag.de>" \
   "Katrin Göring-Eckardt <katrin.goering-eckardt@bundestag.de>" \
+  "Misbah Khan <misbah.khan@bundestag.de>" \
   "Julian Pahlke <julian.pahlke@bundestag.de>" \
   "Marlene Schönberger <marlene.schoenberger@bundestag.de>"
 
