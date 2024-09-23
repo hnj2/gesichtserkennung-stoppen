@@ -34,6 +34,8 @@ EOF
 }
 #make_box bfdi "Ulrich Kelber" "Bundesbeauftragter für den Datenschutz und die Informationsfreiheit" "https:\/\/www.bfdi.bund.de"
 
+make_box andreas "Andreas Eschbach" "Buchautor" "https:\/\/www.andreaseschbach.de"
+
 make_box katta "Katharina Nocun" "Netzaktivistin \& Buchautorin" "https:\/\/kattascha.de"
 
 make_box rainer "Rainer Rehak" "Stellv. Vorsitzender des Forum InformatikerInnen für Frieden \& gesellschaftliche Verantwortung" "https:\/\/www.weizenbaum-institut.de\/portrait\/p\/rainer-rehak\/"
@@ -49,8 +51,6 @@ make_box markus "Markus Beckedahl (2020)" "Gründer re:publica \& netzpolitik.or
 #make_box anke "Anke Domscheit-Berg" "Netzpolitische Sprecherin der Linksfraktion im Bundestag" "https:\/\/twitter.com\/anked"
 
 make_box thomas "Thomas Lohninger" "Geschäftsführer von epicenter.works" "https:\/\/socialhack.eu"
-
-make_box andreas "Andreas Eschbach" "Buchautor" "https:\/\/www.andreaseschbach.de"
 
 cat <<EOF
 
